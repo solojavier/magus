@@ -199,6 +199,9 @@ noremap ,hl :set hlsearch! hlsearch?<CR>
 nnoremap ' `
 nnoremap ` '
 
+"(c)hange Working (d)irectory to current file
+nmap <silent> ,cd :cd %:p:h
+
 " ============================
 " Tabularize - alignment
 " ============================
