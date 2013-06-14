@@ -47,6 +47,7 @@ Bundle "slim-template/vim-slim.git"
 Bundle "timcharper/textile.vim.git"
 Bundle "tpope/vim-haml"
 Bundle "wavded/vim-stylus"
+Bundle "vim-scripts/liquid.vim"
 
 " Git related...
 Bundle "gregsexton/gitv"
