@@ -1,6 +1,6 @@
 require 'rake'
 require 'fileutils'
-require File.join(File.dirname(__FILE__), 'bin', 'magus', 'neobundle')
+require File.join(File.dirname(__FILE__), 'bin', 'yadr', 'neobundle')
 
 desc "Hook our dotfiles into system-standard positions."
 task :install => [:submodule_init, :submodules] do
