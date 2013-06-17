@@ -15,7 +15,7 @@
     # Opinionated Dotfile Distribution
     # Now with Prezto and Vundle!
 
-    sh -c "`curl -fsSL https://raw.github.com/marioricalde/dotfiles/master/install.sh`"
+    sh -c "`curl -fsSL https://raw.github.com/marioricalde/magus/master/install.sh`"
 
 **Always be sure to run `rake update` after pulling to ensure plugins are updated**
 
@@ -51,13 +51,13 @@ Installation is automated via `rake` and the `yadr` command. To get
 started please run:
 
 ```bash
-sh -c "`curl -fsSL https://raw.github.com/marioricalde/dotfiles/master/install.sh`"
+sh -c "`curl -fsSL https://raw.github.com/marioricalde/magus/master/install.sh`"
 ```
 
 **Note:** Magus will automatically install all of its subcomponents. If you want to be asked
 about each one, use:
 ```bash
-sh -c "`curl -fsSL https://raw.github.com/marioricalde/dotfiles/master/install.sh`" -s ask
+sh -c "`curl -fsSL https://raw.github.com/marioricalde/magus/master/install.sh`" -s ask
 ```
 
 # Additional Installation
@@ -161,7 +161,7 @@ Next time you load your shell, this file will be read and your prompt will be th
 Pry offers a much better out of the box IRB experience with colors, tab completion, and lots of other tricks. You can also use it
 as an actual debugger on MRI 1.9.2+ by installing [pry-debugger](https://github.com/nixme/pry-debugger).
 
-[Learn more about Magus's pry customizations and how to install](https://github.com/marioricalde/dotfiles/blob/master/README-pry.md)
+[Learn more about Magus's pry customizations and how to install](https://github.com/marioricalde/magus/blob/master/README-pry.md)
 
 ### Git Configuration
 
