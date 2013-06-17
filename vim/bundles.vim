@@ -137,6 +137,7 @@ NeoBundle "bogado/file-line"
 NeoBundle "tpope/vim-rvm"
 NeoBundle "nelstrom/vim-visual-star-search"
 NeoBundle "yonchu/accelerated-smooth-scroll"
+NeoBundle "myusuf3/numbers.vim"
 
 " Customization
 " The plugins listed in ~/.vim/.bundles.local will be added here to
