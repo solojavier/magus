@@ -223,8 +223,6 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
 
 #### Rails
 
- * `Cmd-Shift-R` to use vim-ruby-conque to run a spec file. `Cmd-Shift-L` to run from a line (individual it block), `,Cmd-Shift-R` to rerun the last run command (great for re-running specs)
- * :Rspec1 and :Rspec2 to switch between rspec versions for the vim-ruby-conque runner
  * `,vv` and `,cc` to switch between view and controller
 
 #### Surround.vim customizations
@@ -411,8 +409,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * surround - super easy quote and tag manipulation - ysiw" - sourround inner word with quotes. ci"' - change inner double quotes to single quotes, etc
  * greplace - use :Gsearch to find across many files, replace inside the changes, then :Greplace to do a replace across all matches - made lightning fast with Silver Searcher. This solution is usually not fast when you have too many replacements, if that's your case checkout `Qargs`.
  * Qargs - execute commands on Quickfix lists. Example: use `:Ag` to find across many files, then use `:Qargs | Argdo %s/pattern/replacement/g` replace across all matches. 
- * ConqueTerm - embedded fully colorful shell inside your vim
- * vim-ruby-conque - helpers to run ruby,rspec,rake within ConqueTerm
+ * VimShell - Shell implemented with VimScript. Use `:VimShell` to run. 
  * vim-markdown-preview - :Mm to view your README.md as html
  * html-escape - ,he and ,hu to escape and unescape html
  * ruby-debug-ide - not quite working for me, but maybe it will for you. supposedly a graphical debugger you can step through
