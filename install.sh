@@ -1,11 +1,11 @@
 #!/bin/sh
 
-if [ ! -d "$HOME/.yadr" ]; then
+if [ ! -d "$HOME/.magus" ]; then
     echo "Installing YADR for the first time"
-    git clone https://github.com/skwp/dotfiles.git "$HOME/.yadr"
-    cd "$HOME/.yadr"
+    git clone https://github.com/marioricalde/dotfiles.git "$HOME/.magus"
+    cd "$HOME/.magus"
     [ "$1" == "ask" ] && export ASK="true"
     rake install
 else
-    echo "YADR is already installed"
+    echo "Magus is already installed"
 fi

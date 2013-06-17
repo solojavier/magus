@@ -1,12 +1,12 @@
 require 'rake'
 require 'fileutils'
-require File.join(File.dirname(__FILE__), 'bin', 'yadr', 'neobundle')
+require File.join(File.dirname(__FILE__), 'bin', 'magus', 'neobundle')
 
 desc "Hook our dotfiles into system-standard positions."
 task :install => [:submodule_init, :submodules] do
   puts
   puts "======================================================"
-  puts "Welcome to YADR Installation."
+  puts "Welcome to Magus Installation. (Powered by YADR)"
   puts "======================================================"
   puts
 
@@ -58,11 +58,11 @@ desc "Init and update submodules."
 task :submodules do
   unless ENV["SKIP_SUBMODULES"]
     puts "======================================================"
-    puts "Downloading YADR submodules...please wait"
+    puts "Downloading Magus submodules...please wait"
     puts "======================================================"
 
     run %{
-      cd $HOME/.yadr
+      cd $HOME/.magus
       git submodule update --recursive
       git clean -df
     }
@@ -117,7 +117,7 @@ task :install_neobundle do
   puts ""
   
   run %{
-    cd $HOME/.yadr
+    cd $HOME/.magus
     git clone https://github.com/Shougo/neobundle.vim #{File.join('vim','bundle', 'neobundle.vim')}
   }
 
@@ -173,7 +173,7 @@ def install_fonts
   puts "======================================================"
   puts "Installing patched fonts for Powerline."
   puts "======================================================"
-  run %{ cp -f $HOME/.yadr/fonts/* $HOME/Library/Fonts }
+  run %{ cp -f $HOME/.magus/fonts/* $HOME/Library/Fonts }
   puts
 end
 
@@ -247,15 +247,15 @@ def install_prezto
   puts "Installing Prezto (ZSH Enhancements)..."
 
   unless File.exists?(File.join(ENV['ZDOTDIR'] || ENV['HOME'], ".zprezto"))
-    run %{ ln -nfs "$HOME/.yadr/zsh/prezto" "${ZDOTDIR:-$HOME}/.zprezto" }
+    run %{ ln -nfs "$HOME/.magus/zsh/prezto" "${ZDOTDIR:-$HOME}/.zprezto" }
 
     # The prezto runcoms are only going to be installed if zprezto has never been installed
     file_operation(Dir.glob('zsh/prezto/runcoms/z*'), :copy)
   end
 
   puts
-  puts "Overriding prezto ~/.zpreztorc with YADR's zpreztorc to enable additional modules..."
-  run %{ ln -nfs "$HOME/.yadr/zsh/prezto-override/zpreztorc" "${ZDOTDIR:-$HOME}/.zpreztorc" }
+  puts "Overriding prezto ~/.zpreztorc with Magus's zpreztorc to enable additional modules..."
+  run %{ ln -nfs "$HOME/.magus/zsh/prezto-override/zpreztorc" "${ZDOTDIR:-$HOME}/.zpreztorc" }
 
   puts
   puts "Creating directories for your customizations"
@@ -302,11 +302,11 @@ def file_operation(files, method = :symlink)
     end
 
     # Temporary solution until we find a way to allow customization
-    # This modifies zshrc to load all of yadr's zsh extensions.
-    # Eventually yadr's zsh extensions should be ported to prezto modules.
+    # This modifies zshrc to load all of Magus's zsh extensions.
+    # Eventually Magus's zsh extensions should be ported to prezto modules.
     if file == 'zshrc'
       File.open(target, 'a') do |zshrc|
-        zshrc.puts('for config_file ($HOME/.yadr/zsh/*.zsh) source $config_file')
+        zshrc.puts('for config_file ($HOME/.magus/zsh/*.zsh) source $config_file')
       end
     end
 
@@ -339,12 +339,19 @@ end
 
 def success_msg(action)
   puts ""
-  puts "   _     _           _         "
-  puts "  | |   | |         | |        "
-  puts "  | |___| |_____  __| | ____   "
-  puts "  |_____  (____ |/ _  |/ ___)  "
-  puts "   _____| / ___ ( (_| | |      "
-  puts "  (_______\_____|\____|_|      "
+  puts "`MMb     dMM'                                     "
+  puts " MMM.   ,PMM   Like Janus, but with more Magic!   "
+  puts " M`Mb   d'MM    ___     __     ___   ___   ____   "
+  puts " M YM. ,P MM  6MMMMb   6MMbMMM `MM    MM  6MMMMb\ "
+  puts " M `Mb d' MM 8M'  `Mb 6M'`Mb    MM    MM MM'    ` "
+  puts " M  YM.P  MM     ,oMM MM  MM    MM    MM YM.      "
+  puts " M  `Mb'  MM ,6MM9'MM YM.,M9    MM    MM  YMMMMb  "
+  puts " M   YP   MM MM'   MM  YMM9     MM    MM      `Mb "
+  puts " M   `'   MM MM.  ,MM (M        YM.   MM L    ,MM "
+  puts "_M_      _MM_`YMMM9'Yb.YMMMMb.   YMMM9MM_MYMMMM9  "
+  puts "                      6M    Yb                    "
+  puts "                      YM.   d9   Powered by YADR  "
+  puts "                       YMMMM9                     " 
   puts ""
-  puts "YADR has been #{action}. Please restart your terminal and vim."
+  puts "Magus has been #{action}. Please restart your terminal and vim."
 end

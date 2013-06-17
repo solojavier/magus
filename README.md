@@ -1,23 +1,30 @@
-     _     _           _
-    | |   | |         | |
-    | |___| |_____  __| | ____
-    |_____  (____ |/ _  |/ ___)
-     _____| / ___ ( (_| | |
-    (_______\_____|\____|_|
+    `MMb     dMM'                                     
+     MMM.   ,PMM   Like Janus, but with more Magic!   
+     M`Mb   d'MM    ___     __     ___   ___   ____   
+     M YM. ,P MM  6MMMMb   6MMbMMM `MM    MM  6MMMMb\ 
+     M `Mb d' MM 8M'  `Mb 6M'`Mb    MM    MM MM'    ` 
+     M  YM.P  MM     ,oMM MM  MM    MM    MM YM.      
+     M  `Mb'  MM ,6MM9'MM YM.,M9    MM    MM  YMMMMb  
+     M   YP   MM MM'   MM  YMM9     MM    MM      `Mb 
+     M   `'   MM MM.  ,MM (M        YM.   MM L    ,MM 
+    _M_      _MM_`YMMM9'Yb.YMMMMb.   YMMM9MM_MYMMMM9  
+                          6M    Yb                    
+                          YM.   d9   Powered by YADR  
+                           YMMMM9          
 
-    # Yet Another Dotfile Repo v1.1
+    # Opinionated Dotfile Distribution
     # Now with Prezto and Vundle!
 
-    sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
+    sh -c "`curl -fsSL https://raw.github.com/marioricalde/dotfiles/master/install.sh`"
 
 **Always be sure to run `rake update` after pulling to ensure plugins are updated**
 
 This is a collection of best of breed tools from across the web,
 from scouring other people's dotfile repos, blogs, and projects.
 
-## What is YADR?
+## What is Magus?
 
-**YADR is an opinionated dotfile repo that will make your heart sing**
+**Magus is an opinionated dotfile repo that will make your heart sing**
 
   * OSX is the best OS. MacVim is the best editor. Zsh is the best shell. Pry is the best irb. Solarized is the best color scheme.
   * Apple-style philosophy: make everything Just Work and Look Good. Don't worry about too many options.
@@ -30,7 +37,7 @@ from scouring other people's dotfile repos, blogs, and projects.
   * Much larger list of vim plugins than Janus, specifically geared to Ruby/Rails/Git development.
   * Optimized support for Solarized color scheme only, everything guaranteed to Look Good. Your eyes will thank you.
   * All plugins tested with Solarized and custom color maps provided where needed to ensure your eyes will not bleed.
-  * No configuration file to maintain. YADR uses tiny ruby scripts to wrap git submodule maintenance.
+  * No configuration file to maintain. Magus uses tiny ruby scripts to wrap git submodule maintenance. (Powered by YADR)
   * Much cleaner vimrc that keps keymaps isolated to a plugin file (not in the main vimrc).
   * All keymaps and customization in small, easy to maintain files under .vim/plugin/settings
   * More than just vim plugins - great shell aliases, osx, and irb/pry tweaks to make you more productive.
@@ -44,13 +51,13 @@ Installation is automated via `rake` and the `yadr` command. To get
 started please run:
 
 ```bash
-sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
+sh -c "`curl -fsSL https://raw.github.com/marioricalde/dotfiles/master/install.sh`"
 ```
 
-**Note:** YADR will automatically install all of its subcomponents. If you want to be asked
+**Note:** Magus will automatically install all of its subcomponents. If you want to be asked
 about each one, use:
 ```bash
-sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`" -s ask
+sh -c "`curl -fsSL https://raw.github.com/marioricalde/dotfiles/master/install.sh`" -s ask
 ```
 
 # Additional Installation
@@ -67,14 +74,14 @@ If you're hitting a small target in the corner, you are slowing yourself down co
 Upgrading is easy.
 
 ```bash
-cd ~/.yadr
+cd ~/.magus
 git pull origin master
 rake update
 ```
 
 # What's included, and how to customize?
 
-Read on to learn what YADR provides!
+Read on to learn what Magus provides!
 
 ### [Homebrew](http://mxcl.github.com/homebrew/)
 
@@ -125,13 +132,13 @@ Make sure you follow the naming convention of `prompt_[name]_setup`
 touch ~/.zsh.prompts/prompt_mytheme_setup
 ```
 
-Check out ~/.yadr/zsh/prezto-themes/prompt_skwp_setup for an example of how to write a prompt.
+Check out ~/.magus/zsh/prezto-themes/prompt_skwp_setup for an example of how to write a prompt.
 See also the [Prezto](https://github.com/sorin-ionescu/prezto) project for more info on themes.
 
 ### Customizing ZSH & Picking a theme
 
-If you want to customize your zsh experience, yadr provides two hooks via ~/.zsh.after/ and ~/.zsh.before/ directories.
-In these directories, you can place files to customize things that load before and after other zsh customizations that come from ~/.yadr/zsh/*
+If you want to customize your zsh experience, Magus provides two hooks via ~/.zsh.after/ and ~/.zsh.before/ directories.
+In these directories, you can place files to customize things that load before and after other zsh customizations that come from ~/.magus/zsh/*
 
 For example, to override the theme, you can do something like this:
 ```
@@ -154,7 +161,7 @@ Next time you load your shell, this file will be read and your prompt will be th
 Pry offers a much better out of the box IRB experience with colors, tab completion, and lots of other tricks. You can also use it
 as an actual debugger on MRI 1.9.2+ by installing [pry-debugger](https://github.com/nixme/pry-debugger).
 
-[Learn more about YADR's pry customizations and how to install](https://github.com/skwp/dotfiles/blob/master/README-pry.md)
+[Learn more about Magus's pry customizations and how to install](https://github.com/marioricalde/dotfiles/blob/master/README-pry.md)
 
 ### Git Configuration
 
@@ -437,13 +444,13 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
 ### Overriding vim settings
 
 You may use `~/.vimrc.before` for settings like the __leader__ setting.
-You may `~/.vimrc.after` (for those transitioning from janus) or in `~/.yadr/vim/after/.vimrc.after` for any additional overrides/settings.
-If you didn't have janus before, it is recommended to just put it in `~/.yadr/vim/after` so you can better manage your overrides.
+You may `~/.vimrc.after` (for those transitioning from janus) or in `~/.magus/vim/after/.vimrc.after` for any additional overrides/settings.
+If you didn't have janus before, it is recommended to just put it in `~/.magus/vim/after` so you can better manage your overrides.
 
 
 ### Adding your own vim plugins
 
-YADR comes with a dead simple plugin manager that just uses bundles and submodules, without any fancy config files.
+Magus comes with a dead simple plugin manager that just uses bundles and submodules, without any fancy config files.
 
 Add a plugin
 
@@ -487,6 +494,7 @@ I can't take credit for all of this. The vim files are a combination of
 work by tpope, scrooloose, and many hours of scouring blogs, vimscripts,
 and other places for the cream of the crop of vim awesomeness.
 
+ * https://github.com/skwp
  * http://ethanschoonover.com/solarized - a scientifically calibrated color scheme
  * https://github.com/astrails/dotvim
  * https://github.com/carlhuda/janus
@@ -502,16 +510,12 @@ Please explore these people's work.
 
 ### Contributors
 
-Yadr is made possible by many awesome people, too many to list :) But here are a few of the bigger contributors and core committers.
+Magus is made possible by many awesome people, too many to list :) But here are a few of the bigger contributors and core committers.
 
- * Initial Version: @[skwp](https://github.com/skwp)
- * Cleanup, auto installer: @[kylewest](https://github.com/kylewest)
- * Switch from oh-my-zsh to Presto: @[JeanMertz](https://github.com/JeanMertz)
- * Vundle migration: @[duhanebel](https://github.com/duhanebel)
- * NeoBundle migration: @[lfilho](https://github.com/lfilho)
-
-
-### For more tips and tricks
-
-Follow my blog: http://yanpritzker.com
+ * YADR: Initial Version: @[skwp](https://github.com/skwp) / [blog](http://yanpritzker.com)
+ * YADR: Cleanup, auto installer: @[kylewest](https://github.com/kylewest)
+ * YADR: Switch from oh-my-zsh to Presto: @[JeanMertz](https://github.com/JeanMertz)
+ * YADR: Vundle migration: @[duhanebel](https://github.com/duhanebel)
+ * MAGUS: NeoBundle migration: @[lfilho](https://github.com/lfilho)
+ * MAGUS: Modifications @[MarioRicalde](https://github.com/MarioRicalde)
 
