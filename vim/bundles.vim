@@ -104,6 +104,15 @@ NeoBundle "vim-scripts/AutoTag.git"
 NeoBundle "vim-scripts/lastpos.vim"
 NeoBundle "vim-scripts/sudo.vim"
 NeoBundle "xsunsmile/showmarks.git"
+NeoBundle "Shougo/vimshell.vim"
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"
