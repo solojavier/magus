@@ -1,16 +1,17 @@
-    `MMb     dMM'                                     
-     MMM.   ,PMM   Like Janus, but with more Magic!   
-     M`Mb   d'MM    ___     __     ___   ___   ____   
-     M YM. ,P MM  6MMMMb   6MMbMMM `MM    MM  6MMMMb\ 
-     M `Mb d' MM 8M'  `Mb 6M'`Mb    MM    MM MM'    ` 
-     M  YM.P  MM     ,oMM MM  MM    MM    MM YM.      
-     M  `Mb'  MM ,6MM9'MM YM.,M9    MM    MM  YMMMMb  
-     M   YP   MM MM'   MM  YMM9     MM    MM      `Mb 
-     M   `'   MM MM.  ,MM (M        YM.   MM L    ,MM 
-    _M_      _MM_`YMMM9'Yb.YMMMMb.   YMMM9MM_MYMMMM9  
-                          6M    Yb                    
-                          YM.   d9   Powered by YADR  
-                           YMMMM9          
+    `MMb     dMM'                                    
+     MMM.   ,PMM   Like Janus, but with more Magic!  
+     M`Mb   d'MM    ___     __     ___   ___   ____  
+     M YM. ,P MM  6MMMMb   6MMbMMM `MM    MM  6MMMMb\
+     M `Mb d' MM 8M'  `Mb 6M'`Mb    MM    MM MM'    `
+     M  YM.P  MM     ,oMM MM  MM    MM    MM YM.     
+     M  `Mb'  MM ,6MM9'MM YM.,M9    MM    MM  YMMMMb 
+     M   YP   MM MM'   MM  YMM9     MM    MM      `Mb
+     M   `'   MM MM.  ,MM (M        YM.   MM L    ,MM
+    _M_      _MM_`YMMM9'Yb.YMMMMb.   YMMM9MM_MYMMMM9 
+                          6M    Yb                   
+                          YM.   d9   Powered by YADR 
+                           YMMMM9                    
+
 
     # Opinionated Dotfile Distribution
     # Now with Prezto and Vundle!
