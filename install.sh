@@ -2,7 +2,7 @@
 
 if [ ! -d "$HOME/.magus" ]; then
     echo "Installing Magus for the first time"
-    git clone git@github.com:MarioRicalde/magus.git "$HOME/.magus"
+    git clone https://github.com/hybridgroup/magus.git "$HOME/.magus"
     cd "$HOME/.magus"
     [ "$1" == "ask" ] && export ASK="true"
     rake install
