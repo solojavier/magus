@@ -27,7 +27,7 @@ from scouring other people's dotfile repos, blogs, and projects.
 
 **Magus is an opinionated dotfile repo that will make your heart sing**
 
-  * Zsh is the best shell. Pry is the best irb. Solarized is the best color scheme.
+  * Vim is the best editor. Zsh is the best shell. Pry is the best irb. Solarized is the best color scheme.
   * Apple-style philosophy: make everything Just Work and Look Good. Don't worry about too many options.
   * Optimized support for Solarized color scheme only, everything guaranteed to Look Good. Your eyes will thank you.
   * All common commands should be two and three character mnemonic aliases - less keystrokes, RSI reduction
