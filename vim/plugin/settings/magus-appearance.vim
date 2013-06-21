@@ -20,6 +20,11 @@ if has("gui_running")
   set columns=190
 
   set guifont=PragmataPro:h16,Inconsolata\ XL:h17,Inconsolata:h20,Monaco:h17
+
+  " Line Highlight
+  set cursorline
+  " Column Rulers 80 being the "alriht, watch out" and 100 the "stahp!"
+  set colorcolumn=80,100
 else
   "dont load csapprox if we no gui support - silences an annoying warning
   let g:CSApprox_loaded = 1
