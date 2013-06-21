@@ -13,10 +13,12 @@
                            YMMMM9                    
 
 
-    # Opinionated Dotfile Distribution
-    # Now with Prezto and Vundle!
+# Opinionated Dotfile Distribution
+# Now with Prezto and Vundle!
 
     sh -c "`curl -fsSL https://raw.github.com/marioricalde/magus/magus/install.sh`"
+
+**Important**: As of right now this is only compatible with MacOSX. Although we **definitely** want to support every *nix system out there.
 
 **Always be sure to run `rake update` after pulling to ensure plugins are updated**
 
@@ -28,7 +30,6 @@ from scouring other people's dotfile repos, blogs, and projects.
 **Magus is an opinionated dotfile repo that will make your heart sing**
 
   * Vim is the best editor. Zsh is the best shell. Pry is the best irb. Solarized is the best color scheme.
-  * Apple-style philosophy: make everything Just Work and Look Good. Don't worry about too many options.
   * Optimized support for Solarized color scheme only, everything guaranteed to Look Good. Your eyes will thank you.
   * All common commands should be two and three character mnemonic aliases - less keystrokes, RSI reduction
   * Easy to use plugin architecture, no config files to edit.
