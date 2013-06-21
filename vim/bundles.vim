@@ -112,6 +112,7 @@ NeoBundle 'Shougo/vimproc', {
       \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
+NeoBundle "MarioRicalde/stab.vim"
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"
