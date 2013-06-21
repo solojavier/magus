@@ -12,7 +12,8 @@
                           YM.   d9   Powered by YADR 
                            YMMMM9                    
 
-    # Like Janus, but with more Magic. The ultimate dotfiles distribution.
+    # Like Janus, but with more Magic.
+    # The ultimate dotfiles distribution.
 
       sh -c "`curl -fsSL https://raw.github.com/marioricalde/magus/magus/install.sh`"
 
