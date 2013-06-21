@@ -1,3 +1,8 @@
+" New split will appear at the bottom.
+set splitbelow
+" New split will appear the right.
+set splitright
+
 if has("gui_running")
   " Disable the scrollbars (NERDTree)
   set guioptions-=r
