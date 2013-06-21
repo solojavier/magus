@@ -18,20 +18,20 @@ nnoremap <silent> <D-P> :ClearCtrlPCache<cr>
 
 " Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
 " Open CtrlP starting from a particular path, making it much
-" more likely to find the correct thing first. mnemonic 'jump to [something]'
-map ,jm :CtrlP app/models<CR>
-map ,jc :CtrlP app/controllers<CR>
-map ,jv :CtrlP app/views<CR>
-map ,jh :CtrlP app/helpers<CR>
-map ,jl :CtrlP lib<CR>
-map ,jp :CtrlP public<CR>
-map ,js :CtrlP spec<CR>
-map ,jf :CtrlP fast_spec<CR>
-map ,jd :CtrlP db<CR>
-map ,jC :CtrlP config<CR>
-map ,jV :CtrlP vendor<CR>
-map ,jF :CtrlP factories<CR>
-map ,jT :CtrlP test<CR>
+" more likely to find the correct thing first. mnemonic 'to [something]'
+map ,tm :CtrlP app/models<CR>
+map ,tc :CtrlP app/controllers<CR>
+map ,tv :CtrlP app/views<CR>
+map ,th :CtrlP app/helpers<CR>
+map ,tl :CtrlP lib<CR>
+map ,tp :CtrlP public<CR>
+map ,ts :CtrlP spec<CR>
+map ,tf :CtrlP fast_spec<CR>
+map ,td :CtrlP db<CR>
+map ,tC :CtrlP config<CR>
+map ,tV :CtrlP vendor<CR>
+map ,tF :CtrlP factories<CR>
+map ,tT :CtrlP test<CR>
 
 "Cmd-Shift-(M)ethod - jump to a method (tag in current file)
 "Ctrl-m is not good - it overrides behavior of Enter
