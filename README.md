@@ -154,7 +154,7 @@ Next time you load your shell, this file will be read and your prompt will be th
  * Bash style ctrl-R for reverse history finder
  * Ctrl-x,Ctrl-l to insert output of last command
  * Fuzzy matching - if you mistype a directory name, tab completion will fix it
- * [fasd](https://github.com/clvv/fasd) integration - hit `z` and partial match for recently used directory. Tab completion enabled.
+ * [fasd](https://github.com/clvv/fasd) integration - hit `t` and partial match for recently used directory. Tab completion enabled.
  * Syntax highlighting as you type commands
  * Lots more!
 
