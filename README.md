@@ -262,19 +262,19 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `,t` - CtrlP fuzzy file selector
  * `,b` - CtrlP buffer selector
  * `Cmd-Shift-M` - jump to method - CtrlP tag search within current buffer
- * `,jm` jump (via CtrlP) to app/models
- * `,jc` app/controllers
- * `,jv` app/views
- * `,jh` app/helpers
- * `,jl` lib
- * `,jp` public
- * `,js` spec
- * `,jf` fast_spec
- * `,jt` test
- * `,jd` db
- * `,jC` config
- * `,jV` vendor
- * `,jF` factories
+ * `,tm` to (via CtrlP) to app/models
+ * `,tc` app/controllers
+ * `,tv` app/views
+ * `,th` app/helpers
+ * `,tl` lib
+ * `,tp` public
+ * `,ts` spec
+ * `,tf` fast_spec
+ * `,tt` test
+ * `,td` db
+ * `,tC` config
+ * `,tV` vendor
+ * `,tF` factories
  * `Cmd-Shift-P` - Clear CtrlP cache
  * `:Bopen [gem name]` to navigate to a gem (@tpope/vim-bundler)
 
