@@ -12,11 +12,10 @@
                           YM.   d9   Powered by YADR 
                            YMMMM9                    
 
-
-# Opinionated Dotfile Distribution
-# Now with Prezto and Vundle!
+    # Like Janus, but with more Magic. The ultimate dotfiles distribution.
 
     sh -c "`curl -fsSL https://raw.github.com/marioricalde/magus/magus/install.sh`"
+
 
 **Important**: As of right now this is only compatible with MacOSX. Although we **definitely** want to support every *nix system out there.
 
