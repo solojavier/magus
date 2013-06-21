@@ -27,6 +27,7 @@ NeoBundle "tpope/vim-rake"
 NeoBundle "tpope/vim-rvm"
 NeoBundle "vim-ruby/vim-ruby"
 NeoBundle "vim-scripts/Specky"
+NeoBundle "ck3g/vim-change-hash-syntax"
 
 " Other languages
 NeoBundle "briancollins/vim-jst"
