@@ -4,6 +4,9 @@
 colorscheme solarized
 set background=dark
 
+" Set the window minimum height
+let &winheight = &lines * 2 / 10
+
 if has("gui_running")
   "tell the term has 256 colors
   set t_Co=256
