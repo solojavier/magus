@@ -515,6 +515,6 @@ Magus is made possible by many awesome people, too many to list :) But here are 
  * YADR: Cleanup, auto installer: @[kylewest](https://github.com/kylewest)
  * YADR: Switch from oh-my-zsh to Presto: @[JeanMertz](https://github.com/JeanMertz)
  * YADR: Vundle migration: @[duhanebel](https://github.com/duhanebel)
- * MAGUS: NeoBundle migration: @[lfilho](https://github.com/lfilho)
- * MAGUS: Modifications @[MarioRicalde](https://github.com/MarioRicalde)
+ * YADR: NeoBundle migration: @[lfilho](https://github.com/lfilho)
+ * MAGUS: Initiator @[MarioRicalde](https://github.com/MarioRicalde)
 
