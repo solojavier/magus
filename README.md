@@ -517,5 +517,5 @@ Magus is made possible by many awesome people, too many to list :) But here are 
  * YADR: Vundle migration: @[duhanebel](https://github.com/duhanebel)
  * YADR: NeoBundle migration: @[lfilho](https://github.com/lfilho)
  * **MAGUS**: Initiator @[MarioRicalde](https://github.com/MarioRicalde)
- * ****: First Magus User @[Dfischer](https://github.com/dfischer)
+ * **MAGUS**: First Magus User @[Dfischer](https://github.com/dfischer)
 
