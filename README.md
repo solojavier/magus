@@ -27,20 +27,17 @@ from scouring other people's dotfile repos, blogs, and projects.
 
 **Magus is an opinionated dotfile repo that will make your heart sing**
 
-  * OSX is the best OS. MacVim is the best editor. Zsh is the best shell. Pry is the best irb. Solarized is the best color scheme.
+  * Zsh is the best shell. Pry is the best irb. Solarized is the best color scheme.
   * Apple-style philosophy: make everything Just Work and Look Good. Don't worry about too many options.
+  * Optimized support for Solarized color scheme only, everything guaranteed to Look Good. Your eyes will thank you.
   * All common commands should be two and three character mnemonic aliases - less keystrokes, RSI reduction
-  * Avoid stressful hand motions, e.g. remap Esc to caps lock key, remap underscore to Alt-k in vim, make window management in vim easy.
   * Easy to use plugin architecture, no config files to edit.
   * Pick one tool and use it everywhere: vim-ize everything
-  * Beautiful, easy to read and small vimrc**
-  * No key overrides or custom hackery in vimrc, everything in well factored snippets in .vim/plugin/settings**
-  * Much larger list of vim plugins than Janus, specifically geared to Ruby/Rails/Git development.
-  * Optimized support for Solarized color scheme only, everything guaranteed to Look Good. Your eyes will thank you.
+  * Beautiful, easy to read and small `vimrc`
+  * No key overrides or custom hackery in vimrc, everything in well factored snippets in `.vim/plugin/settings`
+  * Much larger list of vim plugins than Janus, easily configurable for differnt development environments.
   * All plugins tested with Solarized and custom color maps provided where needed to ensure your eyes will not bleed.
   * No configuration file to maintain. Magus uses tiny ruby scripts to wrap git submodule maintenance. (Powered by YADR)
-  * Much cleaner vimrc that keps keymaps isolated to a plugin file (not in the main vimrc).
-  * All keymaps and customization in small, easy to maintain files under .vim/plugin/settings
   * More than just vim plugins - great shell aliases, osx, and irb/pry tweaks to make you more productive.
 
 ## Screenshot
