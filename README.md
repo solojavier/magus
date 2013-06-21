@@ -507,6 +507,10 @@ And everything that's in the modules included in vim/bundle of course.
 Please explore these people's work.
 
 
+### Mantainer
+
+@[MarioRicalde](https://github.com/MarioRicalde)
+
 ### Contributors
 
 Magus is made possible by many awesome people, too many to list :) But here are a few of the bigger contributors and core committers.
