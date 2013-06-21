@@ -3,6 +3,7 @@
 " http://ethanschoonover.com/solarized/vim-colors-solarized
 colorscheme solarized
 set background=dark
+set guifont=PragmataPro:h16,Inconsolata\ XL:h17,Inconsolata:h20,Monaco:h17
 
 " Set the window minimum height
 let &winheight = &lines * 2 / 10
@@ -18,8 +19,6 @@ if has("gui_running")
 
   set lines=60
   set columns=190
-
-  set guifont=PragmataPro:h16,Inconsolata\ XL:h17,Inconsolata:h20,Monaco:h17
 
   " Line Highlight
   set cursorline
