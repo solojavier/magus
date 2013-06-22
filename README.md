@@ -335,10 +335,11 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
 
 #### Git Utilities
 
- * `:gitv` - Git Log Browser
- * `,dg` - `:diffget`
- * `,dp` - `:diffput`
  * `,g` - `:Git`
+ * `:Gitv` - Git Log Browser
+
+##### Working Copy (w)
+ * `,gws` - `:Gstatus`
 
 ##### Branch (b)
  * `,gb` -  `:Git branch`
@@ -370,8 +371,10 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `,gsx` - `:Git stash drop`
  * `,gsl` - `:Git stash list`
 
-##### Working Copy (w)
- * `,gws` - `:Gstatus`
+##### Diff (d)
+ * `,gs` -  `:Git stash`
+ * `,dg` - `:diffget`
+ * `,dp` - `:diffput`
 
 #### Ruby Debugger
 
