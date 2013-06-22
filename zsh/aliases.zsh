@@ -1,7 +1,7 @@
 # Aliases in this file are bash and zsh compatible
 
 # Don't change. The following determines where YADR is installed.
-yadr=$HOME/.yadr
+yadr=$HOME/.magus
 
 # YADR support
 alias yav='yadr vim-add-plugin'
