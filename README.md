@@ -329,10 +329,49 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `,hp` - Html Preview (open in Safari)
  * `Cmd-Shift-A` - align things (type a character/expression to align by, works in visual mode or by itself)
  * `:ColorToggle` - turn on #abc123 color highlighting (useful for css)
- * `:gitv` - Git log browsers
  * `,hi` - show current Highlight group. if you don't like the color of something, use this, then use `hi! link [groupname] [anothergroupname]` in your vimrc.after to remap the color. You can see available colors using `:hi`
  * `,yr` - view the yankring - a list of your previous copy commands. also you can paste and hit `ctrl-p` for cycling through previous copy commands
  * `,gt` - Go Tidy - tidy up your html code (works on a visual selection)
+
+#### Git Utilities
+
+ * `:gitv` - Git Log Browser
+ * `,dg` - `:diffget`
+ * `,dp` - `:diffput`
+ * `,g` - `:Git`
+
+##### Branch (b)
+ * `,gb` -  `:Git branch`
+ * `,gbc` - `:Git checkout -b`
+ * `,gbl` - `:Git branch -v`
+ * `,gbL` - `:Git branch -av`
+ * `,gbx` - `:Git branch -d`
+ * `,gbX` - `:Git branch -D`
+ * `,gbm` - `:Git branch -m`
+ * `,gbM` - `:Git branch -M`
+ * `,gbs` - `:Git show-branch`
+ * `,gbS` - `:Git show-branch -a`
+
+##### Commit (c)
+ * `,gc` -  `:Gcommit<CR>`
+ * `,gco` - `:Git checkout`
+ * `,gcs` - `:Git show`
+
+##### Fetch (f)
+  * `,gf` - `:Git fetch<CR>`
+
+##### Push (p)
+ * `,gp` - `:Git push<CR>`
+ * `,gpf` - `:Git push --force<CR>`
+
+##### Stash (s)
+ * `,gs` -  `:Git stash`
+ * `,gsa` - `:Git stash apply`
+ * `,gsx` - `:Git stash drop`
+ * `,gsl` - `:Git stash list`
+
+##### Working Copy (w)
+ * `,gws` - `:Gstatus`
 
 #### Ruby Debugger
 
