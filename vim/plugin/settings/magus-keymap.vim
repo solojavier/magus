@@ -202,6 +202,9 @@ nnoremap ` '
 "(c)hange Working (d)irectory to current file
 nmap <silent> ,cd :cd %:p:h
 
+"(r)eplace selected text across document
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
 " ============================
 " Tabularize - alignment
 " ============================
