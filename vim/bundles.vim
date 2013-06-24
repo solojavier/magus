@@ -50,6 +50,8 @@ NeoBundle "tpope/vim-haml"
 NeoBundle "wavded/vim-stylus"
 NeoBundle "vim-scripts/liquid.vim"
 NeoBundle "iakio/smarty3.vim"
+NeoBundle "nono/vim-handlebars"
+NeoBundle "juvenn/mustache.vim"
 
 " Git related...
 NeoBundle "gregsexton/gitv"
