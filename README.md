@@ -332,6 +332,9 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `,hi` - show current Highlight group. if you don't like the color of something, use this, then use `hi! link [groupname] [anothergroupname]` in your vimrc.after to remap the color. You can see available colors using `:hi`
  * `,yr` - view the yankring - a list of your previous copy commands. also you can paste and hit `ctrl-p` for cycling through previous copy commands
  * `,gt` - Go Tidy - tidy up your html code (works on a visual selection)
+ * `,cd` - (c)hange Working (d)irectory to current file
+ * `<C-r>` - (r)eplace selected text across document
+ 
 
 #### Git Utilities
 
