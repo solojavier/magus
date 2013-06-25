@@ -6,7 +6,7 @@ GitStyleBinary.command do
   short_desc "Update all plugins to latest versions from github"
 
   run do |command|
-    `cd $HOME/.yadr && rake submodules`
+    `cd $HOME/.magus && rake submodules`
   end
 
 end
