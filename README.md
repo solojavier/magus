@@ -252,7 +252,6 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `,T` - Tag list (list of methods in a class)
  * `Ctrl-s` - Open related spec in a split. Similar to :A and :AV from rails.vim but is also aware of the fast_spec dir and faster to type
  * `,,w` (alias `,<esc>`) or `,,b` (alias `,<shift-esc>`) - EasyMotion, a vimperator style tool that highlights jump-points on the screen and lets you type to get there.
- * `:Wrap` Enable Wrap
 
 #### File Navigation
  * `,t` - CtrlP fuzzy file selector

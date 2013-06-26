@@ -7,6 +7,7 @@ endfunction
 " TODO: this should happen automatically for certain file types (e.g. markdown)
 command! -nargs=* Wrap :call SetupWrapping()<CR>
 
+" Improved Movement for Wrapped lines.
 vmap <D-j> gj
 vmap <D-k> gk
 vmap <D-$> g$
