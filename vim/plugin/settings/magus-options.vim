@@ -2,7 +2,8 @@
 set splitbelow
 " New split will appear the right.
 set splitright
-
+" Timout wait for <leader> keys
+set timeoutlen=800
 if has("gui_running")
   " Disable the scrollbars (NERDTree)
   set guioptions-=r
@@ -17,4 +18,5 @@ else
   set mouse=a 
   " Syntax coloring lines that are too long just slows down the world
   set synmaxcol=300
+  set lazyredraw
 endif
