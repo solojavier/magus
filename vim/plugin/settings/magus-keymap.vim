@@ -199,6 +199,9 @@ nmap <silent> ,cd :cd %:p:h
 "(r)eplace selected text across document
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
+"allow the . to execute once for each line of a visual selection
+vnoremap . :normal .<CR>
+
 " ============================
 " Tabularize - alignment
 " ============================
