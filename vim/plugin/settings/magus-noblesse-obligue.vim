@@ -13,3 +13,5 @@ inoremap <C-b>  <Left>
 inoremap <C-f>  <Right>
 inoremap <C-d>  <Delete>
 
+" MacVim D-Arrows is bad!
+let macvim_skip_cmd_opt_movement=1
