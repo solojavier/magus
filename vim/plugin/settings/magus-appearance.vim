@@ -24,8 +24,17 @@ if has("gui_running")
   set cursorline
   " Column Rulers 80 being the "alriht, watch out" and 100 the "stahp!"
   set colorcolumn=80,100
+
+  " quickly switch between color schemes.
+  command dark set background=dark
+  command light set background=light
 else
   "dont load csapprox if we no gui support - silences an annoying warning
   let g:CSApprox_loaded = 1
+
+  " quickly switch between color schemes.
+  " you need to config your iterm2 to use "dark" and "light" color scheme.
+  command dark set background=dark | !echo -e '\033]50;setprofile=dark\acolor scheme changed'
+  command light set background=light | !echo -e '\033]50;setprofile=light\acolor scheme changed'
 endif
 
