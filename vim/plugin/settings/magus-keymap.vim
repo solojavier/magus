@@ -202,6 +202,9 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 "allow the . to execute once for each line of a visual selection
 vnoremap . :normal .<CR>
 
+" Jump to last non-space character in line ( opposite of ^ )
+map & g_
+
 " ============================
 " Tabularize - alignment
 " ============================
