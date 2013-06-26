@@ -218,10 +218,6 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `Ctrl-o` - Old cursor position - this is a standard mapping but very useful, so included here
  * `Ctrl-i` - opposite of Ctrl-O (again, this is standard)
 
-#### LustyJuggler
-
- * `,lj` - show buffers (LustyJuggler buffer search), just type to fuzzy match a buffer name
- * `,lf` - file system browser
 
 #### BufferExplorer
 
