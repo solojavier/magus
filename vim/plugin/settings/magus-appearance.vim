@@ -26,15 +26,15 @@ if has("gui_running")
   set colorcolumn=80,100
 
   " quickly switch between color schemes.
-  command dark set background=dark
-  command light set background=light
+  command Dark set background=dark
+  command Light set background=light
 else
   "dont load csapprox if we no gui support - silences an annoying warning
   let g:CSApprox_loaded = 1
 
-  " quickly switch between color schemes.
-  " you need to config your iterm2 to use "dark" and "light" color scheme.
-  command dark set background=dark | !echo -e '\033]50;setprofile=dark\acolor scheme changed'
-  command light set background=light | !echo -e '\033]50;setprofile=light\acolor scheme changed'
+  " Quickly switch between color schemes.
+  " You need to config your iTerm2 to use "Dark" and "Light" Color Scheme.
+  command Dark set background=dark | !echo -e '\033]50;SetProfile=Dark\aColor Scheme Changed'
+  command Light set background=light | !echo -e '\033]50;SetProfile=Light\aColor Scheme Changed'
 endif
 
