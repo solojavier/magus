@@ -147,7 +147,7 @@ NeoBundle "myusuf3/numbers.vim"
 " The plugins listed in ~/.vim/.bundles.local will be added here to
 " allow the user to add vim plugins to yadr without the need for a fork.
 if filereadable(expand("~/.magus/vim/.bundles.local"))
-  source ~/.yadr/vim/.bundles.local
+  source ~/.magus/vim/.bundles.local
 endif
 
 "Filetype plugin indent on is required by NeoBundle
