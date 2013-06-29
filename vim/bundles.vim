@@ -17,7 +17,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " let NeoBundle manage NeoBundle (required)
 NeoBundleFetch "Shougo/neobundle.vim"
 
-" All your bundles here
+" All Magus Bundles here
 
 " Ruby, Rails, Rake...
 NeoBundle "astashov/vim-ruby-debugger"
@@ -145,7 +145,7 @@ NeoBundle "myusuf3/numbers.vim"
 
 " Customization
 " The plugins listed in ~/.vim/.bundles.local will be added here to
-" allow the user to add vim plugins to yadr without the need for a fork.
+" allow the user to add vim plugins to Magus without the need for a fork.
 if filereadable(expand("~/.magus/vim/.bundles.local"))
   source ~/.magus/vim/.bundles.local
 endif
