@@ -1,7 +1,7 @@
 # Aliases in this file are bash and zsh compatible
 
-# Don't change. The following determines where YADR is installed.
-yadr=$HOME/.magus
+# Don't change. The following determines where Magus is installed.
+magus=$HOME/.magus
 
 # YADR support
 alias yav='yadr vim-add-plugin'
@@ -28,8 +28,8 @@ alias du='du -h -d 2'
 alias lsg='ll | grep'
 
 # Alias Editing
-alias ae='vim $yadr/zsh/aliases.zsh' #alias edit
-alias ar='source $yadr/zsh/aliases.zsh'  #alias reload
+alias ae='vim $magus/zsh/aliases.zsh' #alias edit
+alias ar='source $magus/zsh/aliases.zsh'  #alias reload
 
 # vim using
 mvim --version > /dev/null 2>&1
