@@ -1,5 +1,10 @@
-# set your user tokens as enivornment variables, such as ~/.secrets
+################################################################################
+#
+# IMPORTANT: Set your user tokens as enivornment variables, such as ~/.secrets
 # See the README for examples.
+#
+################################################################################
+#
 [color]
   ui = true
 [color "branch"]
