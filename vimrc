@@ -1,3 +1,11 @@
+" ==============================================================================
+"
+" IMPORTANT: Set your user tokens as enivornment variables, such as ~/.secrets
+" See the README for examples.
+"
+" ==============================================================================
+
+
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
