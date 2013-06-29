@@ -4,9 +4,12 @@
 "
 " This file contains the list of plugin installed using neobundle plugin manager.
 " Once you've updated the list of plugin, you can run neobundle update by issuing
-" the command :NeoBundleInstall from within vim or directly invoking it from the
-" command line with the following syntax:
-" vim --noplugin -u vim/bundles.vim -N "+set hidden" "+syntax on" +NeoBundleClean! +NeoBundleInstall +qall
+" the command :NeoBundleInstall.
+"
+" IMPORTANT: If you want to add custom plugins without contributing back to
+" the project use: ~/.magus/vim/.bundles.local
+"
+
 " Filetype off is required by neobundle
 filetype off
 
