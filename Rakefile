@@ -168,6 +168,11 @@ def install_homebrew
   puts "Installing Homebrew packages...There may be some warnings."
   puts "======================================================"
   run %{brew install zsh ctags git ghi hub tmux reattach-to-user-namespace the_silver_searcher fasd jslint}
+  patch=`mvim --version | grep -n '1-\\d' | awk '{print $3}'`.gsub(/\d-/, "").to_i
+  if patch <= 885
+    run %{ brew uninstall macvim }
+    run %{ brew install macvim --with-cscope --with-lua --HEAD }
+  end
   puts
   puts
 end
