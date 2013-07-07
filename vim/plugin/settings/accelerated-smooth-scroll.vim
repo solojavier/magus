@@ -1,3 +1,3 @@
 " Disable NumbersToogle Animation
-autocmd User AcSmoothScrollEnter NumbersToggle
-autocmd User AcSmoothScrollLeave NumbersToggle
+autocmd User AcSmoothScrollEnter call RelativeNumbersOff()
+autocmd User AcSmoothScrollLeave call RelativeNumbersOn()
