@@ -67,7 +67,7 @@ NeoBundle "tpope/vim-git"
 " General text editing improvements...
 NeoBundle "AndrewRadev/splitjoin.vim"
 NeoBundle "Raimondi/delimitMate"
-NeoBundle "Shougo/neocomplcache"
+NeoBundle "Shougo/neocomplete.vim"
 NeoBundle "briandoll/change-inside-surroundings.vim"
 NeoBundle "garbas/vim-snipmate"
 NeoBundle "godlygeek/tabular"

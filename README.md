@@ -423,7 +423,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * rails.vim - syntax highlighting, gf (goto file) enhancements, and lots more. should be required for any rails dev
  * rake.vim - like rails.vim but for non-rails projects. makes `:Rtags` and other commands just work
  * ruby.vim - lots of general enhancements for ruby dev
- * necomplcache - intelligent and fast complete as you type, and added Command-Space to select a completion (same as Ctrl-N)
+ * neocomplete - intelligent and fast complete. Use `<Tab>` to trigger completion. Then `jk` to navigate. `o` to select. `q` to cancel.
  * snipMate - offers textmate-like snippet expansion + scrooloose-snippets . try hitting TAB after typing a snippet
  * jasmine.vim - support for jasmine javascript unit testing, including snippets for it, before, etc..
  * vim-javascript-syntax, vim-jquery - better highlighting
