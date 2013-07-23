@@ -275,7 +275,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
 
 #### RSI-reduction
 
- * Cmd-Space to autocomplete. Tab for snipmate snippets.
+ * `Tab` for OmniCompletion, Snippets & File Paths.
  * `Cmd-k` and `Cmd-d` to type underscores and dashes (use Shift), since they are so common in code but so far away from home row
  * `Ctrl-l` to insert a => hashrocket (thanks @garybernhardt)
  * `,.` to go to last edit location (same as `'.`) because the apostrophe is hard on the pinky
@@ -423,8 +423,8 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * rails.vim - syntax highlighting, gf (goto file) enhancements, and lots more. should be required for any rails dev
  * rake.vim - like rails.vim but for non-rails projects. makes `:Rtags` and other commands just work
  * ruby.vim - lots of general enhancements for ruby dev
- * neocomplete - intelligent and fast complete. Use `<Tab>` to trigger completion. Then `jk` to navigate. `o` to select. `q` to cancel.
- * snipMate - offers textmate-like snippet expansion + scrooloose-snippets . try hitting TAB after typing a snippet
+ * neocomplete.vim - intelligent and fast complete. Use `<Tab>` to trigger completion. Then `jk` to navigate. `o` to select. `q` to cancel.
+ * neosnippet.vim - offers textmate-like snippet expansion, integrated with neocomplete.vim try hitting `TAB` after typing a snippet.
  * jasmine.vim - support for jasmine javascript unit testing, including snippets for it, before, etc..
  * vim-javascript-syntax, vim-jquery - better highlighting
  * TagHighlight - highlights class names and method names
