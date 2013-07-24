@@ -331,6 +331,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `,gt` - Go Tidy - tidy up your html code (works on a visual selection)
  * `,cd` - (c)hange Working (d)irectory to current file
  * `<C-r>` - (r)eplace selected text across document
+ * `K` - split line, the opposite of J (join line)
  
 
 #### Git Utilities

@@ -205,6 +205,9 @@ vnoremap . :normal .<CR>
 " Jump to last non-space character in line ( opposite of ^ )
 map & g_
 
+" Split Line, close to J (Join)
+nnoremap K i<CR><ESC>
+
 " ============================
 " Tabularize - alignment
 " ============================
