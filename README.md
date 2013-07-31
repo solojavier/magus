@@ -282,6 +282,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `,ci` to change inside any set of quotes/brackets/etc
  * `,#` `,"` `,'` `,]` `,)` `,}` to surround a word in these common wrappers. the # does #{ruby interpolation}. works in visual mode (thanks @cj)
  * `Cmd-'`, `Cmd-"`, `Cmd-]`, `Cmd-)`, etc to change content inside those surrounding marks. You don't have to be inside them.
+ * `C-c` equivalent to <Esc>.
 
 #### Tab Navigation
 

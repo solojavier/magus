@@ -35,7 +35,7 @@ inoremap <expr><C-k>  pumvisible() ? "\<Up>" : "k"
 inoremap <expr><C-o> pumvisible() ? neocomplete#close_popup() : "o"
 
 " (c) cancel
-inoremap <expr><C-c> pumvisible() ? neocomplete#cancel_popup() : "q"
+inoremap <expr><C-c> pumvisible() ? neocomplete#cancel_popup() : "\<Esc>"
 
 " Define dictionary.
 let g:neocomplete#sources#dictionary#dictionaries = {
