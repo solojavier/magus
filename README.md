@@ -154,6 +154,7 @@ Next time you load your shell, this file will be read and your prompt will be th
  * Fuzzy matching - if you mistype a directory name, tab completion will fix it
  * [fasd](https://github.com/clvv/fasd) integration - hit `t` and partial match for recently used directory. Tab completion enabled.
  * Syntax highlighting as you type commands
+ * `cdb 3` equivalent to `cd ../../../`
  * Lots more!
 
 ### [Pry](http://pry.github.com/) 
