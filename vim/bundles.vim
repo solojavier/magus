@@ -55,6 +55,7 @@ NeoBundle "vim-scripts/liquid.vim"
 NeoBundle "iakio/smarty3.vim"
 NeoBundle "nono/vim-handlebars"
 NeoBundle "juvenn/mustache.vim"
+NeoBundle "evanmiller/nginx-vim-syntax"
 
 " Git related...
 NeoBundle "gregsexton/gitv"
