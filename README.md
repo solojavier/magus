@@ -237,6 +237,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
 
 #### Search/Code Navigation
 
+ * `C-n` - toggle relative numbers while in normal mode, not automatic due to #19
  * `,f` - instantly Find definition of class (must have exuberant ctags installed)
  * `,F` - same as `,f` but in a vertical split
  * `,gf` or `Ctrl-f` - same as vim normal gf (go to file), but in a vertical split (works with file.rb:123 line numbers also)
