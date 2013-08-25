@@ -27,4 +27,4 @@ function! NumberToggle()
 endfunc
 
 " (n)umber Toggle
-nnoremap <C-n> :call NumberToggle()<cr>
+nnoremap <C-j> :call NumberToggle()<cr>
