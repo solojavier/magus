@@ -144,7 +144,12 @@ NeoBundle "slim-template/vim-slim"
 NeoBundle "bogado/file-line"
 NeoBundle "tpope/vim-rvm"
 NeoBundle "nelstrom/vim-visual-star-search"
-NeoBundle "yonchu/accelerated-smooth-scroll"
+
+" Scrolling Improvements
+
+if has("gui_running")
+  NeoBundle "yonchu/accelerated-smooth-scroll"
+endif
 
 " Customization
 " The plugins listed in ~/.vim/.bundles.local will be added here to
