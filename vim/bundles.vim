@@ -137,7 +137,6 @@ NeoBundle "vim-scripts/argtextobj.vim"
 " Cosmetics, color scheme, Powerline...
 NeoBundle "chrisbra/color_highlight"
 NeoBundle "hybridgroup/vim-colors-solarized"
-NeoBundle "hybridgroup/vim-powerline"
 NeoBundle "vim-scripts/TagHighlight"
 NeoBundle "itspriddle/vim-jquery"
 NeoBundle "slim-template/vim-slim"
@@ -146,7 +145,6 @@ NeoBundle "tpope/vim-rvm"
 NeoBundle "nelstrom/vim-visual-star-search"
 
 " Scrolling Improvements
-
 if has("gui_running")
   NeoBundle "yonchu/accelerated-smooth-scroll"
 endif
