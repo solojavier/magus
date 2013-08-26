@@ -18,7 +18,7 @@ endif
 
 " ================ General Config ====================
 
-set number                      "Line numbers are good
+set nonumber                    "Line numbers are not needed #21
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
@@ -70,7 +70,7 @@ set smarttab
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
-set expandtab
+  set nonumber set expandtab
 
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·

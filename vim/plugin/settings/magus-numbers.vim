@@ -5,13 +5,11 @@
 "
 "
 function! RelativeNumbersOn()
-  set nonumber
   set relativenumber
 endfunc
 
 function! RelativeNumbersOff()
   set norelativenumber
-  set number
 endfunc
 
 function! NumberToggle()
