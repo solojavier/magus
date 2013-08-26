@@ -305,7 +305,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
 
 #### NERDTree Project Tree
 
- * `Cmd-Shift-N` - NERDTree toggle
+ * `C-s` - NERDTree toggle
  * `Ctrl-\` - Show current file tree
 
 #### Utility
