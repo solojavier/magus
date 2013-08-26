@@ -70,7 +70,8 @@ set smarttab
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
-  set nonumber set expandtab
+set nonumber
+set expandtab
 
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
