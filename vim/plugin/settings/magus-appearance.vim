@@ -33,3 +33,4 @@ else
   command Light set background=light | !echo -e '\033]50;SetProfile=Light\aColor Scheme Changed'
 endif
 
+i
