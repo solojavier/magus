@@ -20,11 +20,6 @@ if has("gui_running")
   set lines=60
   set columns=190
 
-  " Line Highlight
-  set cursorline
-  " Column Rulers 80 being the "alriht, watch out" and 100 the "stahp!"
-  set colorcolumn=80,100
-
   " quickly switch between color schemes.
   command Dark set background=dark
   command Light set background=light
