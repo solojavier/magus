@@ -135,6 +135,7 @@ NeoBundle "thinca/vim-textobj-function-javascript"
 NeoBundle "vim-scripts/argtextobj.vim"
 
 " Cosmetics, color scheme, Powerline...
+NeoBundle 'bling/vim-airline'
 NeoBundle "chrisbra/color_highlight"
 NeoBundle "hybridgroup/vim-colors-solarized"
 NeoBundle "vim-scripts/TagHighlight"
