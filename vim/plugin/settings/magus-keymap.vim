@@ -121,6 +121,11 @@ nnoremap ,gcf :call GitGrep(expand("%:t:r"))<CR>
 nnoremap <silent> ,z :bp<CR>
 nnoremap <silent> ,x :bn<CR>
 
+" Half Page Down/Up always keeps you in the center of the screen, to avoid
+" loosing you.
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
 " ==============================
 " Window/Tab/Split Manipulation
 " ==============================

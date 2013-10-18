@@ -63,7 +63,7 @@ NeoBundle "hybridgroup/vim-git-grep-rails-partial"
 NeoBundle "tjennings/git-grep-vim"
 NeoBundle "tpope/vim-fugitive"
 NeoBundle "tpope/vim-git"
-NeoBundle "mhinz/vim-signify"
+"NeoBundle "mhinz/vim-signify"
 
 " General text editing improvements...
 NeoBundle "AndrewRadev/splitjoin.vim"
@@ -144,11 +144,6 @@ NeoBundle "slim-template/vim-slim"
 NeoBundle "bogado/file-line"
 NeoBundle "tpope/vim-rvm"
 NeoBundle "nelstrom/vim-visual-star-search"
-
-" Scrolling Improvements
-if has("gui_running")
-  NeoBundle "yonchu/accelerated-smooth-scroll"
-endif
 
 " Customization
 " The plugins listed in ~/.vim/.bundles.local will be added here to
