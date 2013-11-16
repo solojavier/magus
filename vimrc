@@ -1,7 +1,7 @@
 " ==============================================================================
 "
 " IMPORTANT: Set your user tokens as enivornment variables, such as ~/.secrets
-" See the README for examples.
+"            See the README for examples.
 "
 " ==============================================================================
 
@@ -18,6 +18,7 @@ endif
 
 " ================ General Config ====================
 
+set title                       "change the terminal's title
 set nonumber                    "Line numbers are not needed #21
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
@@ -74,8 +75,7 @@ set nonumber
 set expandtab
 
 " Display tabs and trailing spaces visually
-set list listchars=tab:\ \ ,trail:·
-
+set list listchars=tab:\ \ ,trail:`
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
