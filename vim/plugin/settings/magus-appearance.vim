@@ -29,7 +29,11 @@ else
 
   " Quickly switch between color schemes.
   " You need to config your iTerm2 to use "Dark" and "Light" Color Scheme.
-  command Dark set background=dark | !echo -e '\033]50;SetProfile=Dark\aColor Scheme Changed'
-  command Light set background=light | !echo -e '\033]50;SetProfile=Light\aColor Scheme Changed'
+  if !exists(":Dark")
+    command Dark set background=dark | !echo -e '\033]50;SetProfile=Dark\aColor Scheme Changed'
+  endif
+  if !exists(":Light")
+    command Light set background=light | !echo -e '\033]50;SetProfile=Light\aColor Scheme Changed'
+  endif
 endif
 
