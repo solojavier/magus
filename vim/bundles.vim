@@ -35,6 +35,7 @@ NeoBundle "ck3g/vim-change-hash-syntax"
 " Other languages
 NeoBundle "briancollins/vim-jst"
 NeoBundle "pangloss/vim-javascript"
+NeoBundle "jby/tmux.vim.git"
 
 " Html, Xml, Css, Markdown...
 NeoBundle "aaronjensen/vim-sass-status"
