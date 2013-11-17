@@ -52,7 +52,7 @@ hi! PreProc gui=bold
 " they are now just differently saturated and
 " valued riffs on the background color, making
 " everything play together just a little more nicely.
-hi! VertSplit guifg=#003745 cterm=NONE term=NONE ctermfg=NONE ctermbg=NONE
+hi! VertSplit guifg=#003745 cterm=NONE term=NONE ctermfg=0 ctermbg=NONE
 hi! LineNR guifg=#004C60 gui=bold guibg=#002B36 ctermfg=146
 hi! link NonText VertSplit
 hi! Normal guifg=#77A5B1
@@ -63,6 +63,8 @@ hi! CursorLine cterm=NONE gui=NONE
 hi! Visual ctermbg=233
 hi! Type gui=bold
 hi! EasyMotionTarget guifg=#4CE660 gui=bold
+hi! NonText cterm=NONE ctermfg=0
+hi! VertSplit ctermbg=0
 
 " Cursor
 highlight Cursor guifg=#022B34 guibg=white

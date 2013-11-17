@@ -37,3 +37,4 @@ else
   endif
 endif
 
+set fillchars+=vert:\ 
