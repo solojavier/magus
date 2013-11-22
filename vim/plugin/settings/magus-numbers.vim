@@ -24,5 +24,5 @@ function! NumberToggle()
   endif
 endfunc
 
-" (n)umber Toggle
-nnoremap <C-j> :call NumberToggle()<cr>
+" (r)ejative number Toggle
+nnoremap <leader>r :call NumberToggle()<cr>
