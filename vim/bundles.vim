@@ -120,6 +120,7 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 NeoBundle "MarioRicalde/stab.vim"
+NeoBundle "thoughtbot/vim-rspec"
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"

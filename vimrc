@@ -100,3 +100,9 @@ set wildignore+=*.swp,*~,._*,*/.AppleDouble*,*.DS_STORE,log/**,tmp/**,*vim/backu
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+
+" RSpec.vim mappings
+map <Leader>c :call RunCurrentSpecFile()<CR>
+map <Leader>n :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>"
