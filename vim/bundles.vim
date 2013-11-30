@@ -59,7 +59,7 @@ NeoBundle "hybridgroup/vim-git-grep-rails-partial"
 NeoBundle "tjennings/git-grep-vim"
 NeoBundle "tpope/vim-fugitive"
 NeoBundle "tpope/vim-git"
-"NeoBundle "mhinz/vim-signify"
+NeoBundle "mhinz/vim-signify"
 
 " General text editing improvements...
 NeoBundle "AndrewRadev/splitjoin.vim"
