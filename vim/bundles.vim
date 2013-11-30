@@ -76,7 +76,6 @@ NeoBundle "tomtom/tcomment_vim"
 NeoBundle "vim-scripts/IndexedSearch"
 NeoBundle "vim-scripts/camelcasemotion"
 NeoBundle "vim-scripts/matchit.zip"
-NeoBundle "terryma/vim-multiple-cursors"
 
 " General vim improvements
 NeoBundle "MarcWeber/vim-addon-mw-utils"
