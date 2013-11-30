@@ -23,7 +23,6 @@ NeoBundleFetch "Shougo/neobundle.vim"
 " All Magus Bundles here
 
 " Ruby, Rails, Rake...
-NeoBundle "astashov/vim-ruby-debugger"
 NeoBundle "rking/vim-ruby-refactoring"
 NeoBundle "tpope/vim-rails"
 NeoBundle "tpope/vim-rake"
