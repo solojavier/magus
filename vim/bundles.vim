@@ -115,6 +115,7 @@ NeoBundle 'Shougo/vimproc', {
       \ }
 NeoBundle "MarioRicalde/stab.vim"
 NeoBundle 'christoomey/vim-tmux-navigator'
+NeoBundle "nelstrom/vim-visual-star-search"
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"
@@ -135,10 +136,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle "chrisbra/color_highlight"
 NeoBundle "hybridgroup/vim-colors-solarized"
 NeoBundle "vim-scripts/TagHighlight"
-NeoBundle "itspriddle/vim-jquery"
-NeoBundle "slim-template/vim-slim"
 NeoBundle "bogado/file-line"
-NeoBundle "nelstrom/vim-visual-star-search"
 
 " Customization
 " The plugins listed in ~/.vim/.bundles.local will be added here to
