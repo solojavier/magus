@@ -30,12 +30,7 @@ NeoBundle "vim-ruby/vim-ruby"
 NeoBundle "vim-scripts/Specky"
 NeoBundle "ck3g/vim-change-hash-syntax"
 
-" Other languages
-NeoBundle "briancollins/vim-jst"
-NeoBundle "pangloss/vim-javascript"
-NeoBundle "jby/tmux.vim.git"
-
-" Html, Xml, Css, Markdown...
+" Other Languages
 NeoBundle "aaronjensen/vim-sass-status"
 NeoBundle "claco/jasmine.vim"
 NeoBundle "digitaltoad/vim-jade"
@@ -55,6 +50,8 @@ NeoBundle "nono/vim-handlebars"
 NeoBundle "juvenn/mustache.vim"
 NeoBundle "evanmiller/nginx-vim-syntax"
 NeoBundle "miripiruni/CSScomb-for-Vim"
+NeoBundle "pangloss/vim-javascript"
+NeoBundle "jby/tmux.vim.git"
 
 " Git related...
 NeoBundle "gregsexton/gitv"
