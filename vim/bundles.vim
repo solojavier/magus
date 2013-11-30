@@ -138,7 +138,6 @@ NeoBundle "vim-scripts/TagHighlight"
 NeoBundle "itspriddle/vim-jquery"
 NeoBundle "slim-template/vim-slim"
 NeoBundle "bogado/file-line"
-NeoBundle "tpope/vim-rvm"
 NeoBundle "nelstrom/vim-visual-star-search"
 
 " Customization
