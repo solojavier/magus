@@ -483,8 +483,6 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * endwise - automatically closes blocks (if/end)
  * autotag - automatically creates tags for fast sourcecode browsing. use ctrl-[ over a symbol name to go to its definition
  * matchit - helps with matching brackets, improves other plugins
- * sass-status - decorates your status bar with full nesting of where you are in the sass file
-
 
 ### Overriding vim settings
 

@@ -31,7 +31,6 @@ NeoBundle "vim-scripts/Specky"
 NeoBundle "ck3g/vim-change-hash-syntax"
 
 " Other Languages
-NeoBundle "aaronjensen/vim-sass-status"
 NeoBundle "claco/jasmine.vim"
 NeoBundle "digitaltoad/vim-jade"
 NeoBundle "groenewege/vim-less"
