@@ -24,7 +24,7 @@ NeoBundleFetch "Shougo/neobundle.vim"
 
 " Ruby, Rails, Rake...
 NeoBundle "astashov/vim-ruby-debugger"
-NeoBundle "ecomba/vim-ruby-refactoring"
+NeoBundle "rking/vim-ruby-refactoring"
 NeoBundle "tpope/vim-rails"
 NeoBundle "tpope/vim-rake"
 NeoBundle "tpope/vim-rvm"
