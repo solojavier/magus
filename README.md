@@ -434,7 +434,6 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * vim-coffeescript - support for coffeescript, highlighting
  * vim-stylus - support for stylus css language
  * vim-bundler - work with bundled gems
- * vim-ruby-debugger - visual IDE-style debugger. Use `:help ruby-debugger` or `:Rdebugger` and `,dn` to step
 
 #### TextObjects
 
