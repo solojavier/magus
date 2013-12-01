@@ -229,3 +229,9 @@ map <D-%> :so %<CR>
 
 " ,hp = html preview
 map <silent> ,hp :!open -a Safari %<CR><CR>
+
+" ============================
+" Spacing Helper
+" ============================
+nmap <CR> o<Esc>
+nmap <S-Enter> O<Esc>
