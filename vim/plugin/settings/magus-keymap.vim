@@ -235,3 +235,16 @@ map <silent> ,hp :!open -a Safari %<CR><CR>
 " ============================
 nmap <CR> o<Esc>
 nmap <S-Enter> O<Esc>
+
+" ============================
+" Tabs Helper
+" ============================
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabnext<CR>
+nnoremap tk  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tm  :tabm<Space>
+nnoremap tq  :tabclose<CR>"
+nnoremap tt  :tabnew<CR>
+nnoremap tn  :tabnext<CR>
+nnoremap tp  :tabprev<CR>
