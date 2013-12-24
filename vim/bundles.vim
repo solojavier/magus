@@ -116,6 +116,8 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle "MarioRicalde/stab.vim"
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle "nelstrom/vim-visual-star-search"
+NeoBundle "mattn/emmet-vim"
+
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"
