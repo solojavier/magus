@@ -157,6 +157,10 @@ Next time you load your shell, this file will be read and your prompt will be th
  * `cdb 3` equivalent to `cd ../../../`
  * Lots more!
 
+### Tmuxinator
+
+The usage of Vim and Tmux is recommended. For this sole purpose we've included [tmuxinator](https://github.com/aziz/tmuxinator), which provides an easy way to create and reuse sessions.
+
 ### [Pry](http://pry.github.com/) 
 Pry offers a much better out of the box IRB experience with colors, tab completion, and lots of other tricks. You can also use it
 as an actual debugger on MRI 1.9.2+ by installing [pry-debugger](https://github.com/nixme/pry-debugger).
@@ -335,6 +339,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `,cd` - (c)hange Working (d)irectory to current file
  * `<C-r>` - (r)eplace selected text across document
  * `K` - split line, the opposite of J (join line)
+ * `gp` - Visually select last pasted content.
  
 
 #### Git Utilities
@@ -435,6 +440,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * vim-stylus - support for stylus css language
  * vim-bundler - work with bundled gems
  * csscomb - a command to sort CSS properties.
+ * vim-emmet - a command to quickly write html
 
 #### TextObjects
 
