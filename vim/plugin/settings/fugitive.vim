@@ -31,6 +31,9 @@ nnoremap <leader> gf :Git fetch<CR>
 nnoremap <leader>gp :Git push<CR>
 nnoremap <leader>gpf :Git push --force<CR>
 
+" Pull (pl)
+nnoremap <leader>gpl :Git pull --rebase<CR>
+
 " Stash (s)
 nnoremap <leader>gs  :Git stash
 nnoremap <leader>gsa :Git stash apply
