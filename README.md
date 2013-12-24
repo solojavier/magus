@@ -339,7 +339,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `,cd` - (c)hange Working (d)irectory to current file
  * `<C-r>` - (r)eplace selected text across document
  * `K` - split line, the opposite of J (join line)
- * `gp` - Visually select last pasted content.
+ * `pv` - Visually select last pasted content.
  
 
 #### Git Utilities
@@ -391,10 +391,17 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
 
 #### Comments
 
- * `Cmd-/` - toggle comments (usually gcc from tComment)
- * `gcp` (comment a paragraph)
+In Normal Mode:
 
- **Wrapping**
+ * `Cmd-/` - toggle comments (usually gcc from tComment)
+ * `gcc` - toggle comment a line
+ * `gcp` - toggle comment a paragraph
+
+ In Visual Mode:
+
+ * `gc` - toggle comments
+
+#### Wrapping
 
  * :Wrap - wrap long lines (e.g. when editing markdown files).
  * Cmd-[j, k, $, 0, ^] - navigate display lines.
