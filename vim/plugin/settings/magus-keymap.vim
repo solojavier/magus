@@ -207,6 +207,9 @@ map & g_
 " Split Line, close to J (Join)
 nnoremap K i<CR><ESC>
 
+" Select last pasted text.
+nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
+
 " ============================
 " Tabularize - alignment
 " ============================
