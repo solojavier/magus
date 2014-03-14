@@ -561,7 +561,6 @@ and other places for the cream of the crop of vim awesomeness.
 And everything that's in the modules included in vim/bundle of course.
 Please explore these people's work.
 
-
 ### Mantainer
 
 @[MarioRicalde](https://github.com/MarioRicalde)
