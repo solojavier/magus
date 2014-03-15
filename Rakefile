@@ -266,7 +266,7 @@ def install_with_apt_get
     run %{ sudo apt-get remove vim vim-runtime gvim vim-tiny vim-common vim-gui-common }
     run %{ hg clone https://code.google.com/p/vim/ ~/.magus/vim-src }
     run %{ cd ~/.magus/vim-src }
-    run %{ ./configure --with-features=huge --enable-rubyinterp --enable-pythoninterp --with-python-config-dir=/usr/lib/python2.7-config --enable-perlinterp --enable-gui=gtk2 --enable-cscope --prefix=/usr --enable-luainterp }
+    run %{ sh ~/.magus/vim-src/configure --with-features=huge --enable-rubyinterp --enable-pythoninterp --with-python-config-dir=/usr/lib/python2.7-config --enable-perlinterp --enable-gui=gtk2 --enable-cscope --prefix=/usr --enable-luainterp }
     run %{ make VIMRUNTIMEDIR=/usr/share/vim/vim74 }
     run %{ sudo make install }
     run %{ cd ~/.magus/ }
