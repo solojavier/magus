@@ -208,7 +208,7 @@ map & g_
 nnoremap K i<CR><ESC>
 
 " Select last pasted text.
-nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
+nnoremap <expr> pv '`[' . strpart(getregtype(), 0, 1) . '`]'
 
 " ============================
 " Tabularize - alignment
