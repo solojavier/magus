@@ -246,7 +246,7 @@ def install_with_apt_get
     run %{tar xvfz ~/.magus/1.0.1.tar.gz }
     run %{cd ~/.magus/fasd-1.0.1 }
     run %{sudo make install }
-    run %{cd .. }
+    run %{cd ~/.magus/ }
     run %{rm -rf fasd-1.0.1 }
     run %{rm 1.0.1.tar.gz }
     puts
@@ -256,7 +256,8 @@ def install_with_apt_get
     run %{ cd ~/.magus/jsl-0.3.0/src/ }
     run %{ make -f Makefile.ref }
     run %{ sudo cp Linux_All_DBG.OBJ/jsl /usr/local/bin/jsl }
-    run %{ cd ../../ }
+    run %{cd ~/.magus/ }
+    run %{rm -rf fasd-1.0.1 }
     run %{ rm -rf jsl-0.3.0-src.tar.gz }
     run %{ rm -rf jsl-0.3.0 }
     puts
