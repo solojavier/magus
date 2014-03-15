@@ -236,14 +236,15 @@ def install_with_apt_get
     run %{sudo apt-get install tmux}
     puts
     puts "Installing the_silver_searcher ..."
+    puts "If this process hangs for a bit, please press <ENTER>"
     run %{ sudo add-apt-repository ppa:pgolm/the-silver-searcher }
     run %{ sudo apt-get update }
     run %{ sudo apt-get install the-silver-searcher }
     puts
     puts "Installing fasd ..."
     run %{wget https://github.com/clvv/fasd/archive/1.0.1.tar.gz }
-    run %{tar xvfz 1.0.1.tar.gz }
-    run %{cd fasd-1.0.1 }
+    run %{tar xvfz ~/.magus/1.0.1.tar.gz }
+    run %{cd ~/.magus/fasd-1.0.1 }
     run %{sudo make install }
     run %{cd .. }
     run %{rm -rf fasd-1.0.1 }
@@ -251,8 +252,8 @@ def install_with_apt_get
     puts
     puts "Installing jslint ..."
     run %{ wget http://www.javascriptlint.com/download/jsl-0.3.0-src.tar.gz }
-    run %{ tar xvfz jsl-0.3.0-src.tar.gz }
-    run %{ cd jsl-0.3.0/src/ }
+    run %{ tar xvfz ~/.magus/jsl-0.3.0-src.tar.gz }
+    run %{ cd ~/.magus/jsl-0.3.0/src/ }
     run %{ make -f Makefile.ref }
     run %{ sudo cp Linux_All_DBG.OBJ/jsl /usr/local/bin/jsl }
     run %{ cd ../../ }
@@ -262,12 +263,14 @@ def install_with_apt_get
     puts "Installing macvim-edge ..."
     run %{ sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev ruby-dev mercurial }
     run %{ sudo apt-get remove vim vim-runtime gvim vim-tiny vim-common vim-gui-common }
-    run %{ cd ~ }
-    run %{ hg clone https://code.google.com/p/vim/ }
-    run %{ cd vim }
+    run %{ cd ~/.magus/ }
+    run %{ hg clone https://code.google.com/p/vim/ vim-src }
+    run %{ cd vim-src }
     run %{ ./configure --with-features=huge --enable-rubyinterp --enable-pythoninterp --with-python-config-dir=/usr/lib/python2.7-config --enable-perlinterp --enable-gui=gtk2 --enable-cscope --prefix=/usr --enable-luainterp }
     run %{ make VIMRUNTIMEDIR=/usr/share/vim/vim74 }
     run %{ sudo make install }
+    run %{ cd ~/.magus/ }
+    run %{ rm -rf vim-src }
   end
   puts
   puts
