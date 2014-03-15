@@ -11,6 +11,7 @@ task :install => [:submodule_init, :submodules] do
   puts
 
   install_homebrew if RUBY_PLATFORM.downcase.include?("darwin")
+  install_with_apt_get if RUBY_PLATFORM.downcase.include?("linux")
   install_rvm_binstubs
 
   # this has all the runcoms from this directory.
@@ -18,6 +19,7 @@ task :install => [:submodule_init, :submodules] do
     file_operation(Dir.glob('git/*'))
     run %{ git config --global core.excludesfile ~/.gitignore }
   end
+
   file_operation(Dir.glob('irb/*')) if want_to_install?('irb/pry configs (more colorful)')
   file_operation(Dir.glob('ruby/*')) if want_to_install?('rubygems config (faster/no docs)')
   run %{gem install tmuxinator html2haml} if want_to_install?('required gems')
@@ -204,6 +206,68 @@ def install_homebrew
     puts "Installing macvim-edge ..."
     run %{ brew uninstall macvim }
     run %{ brew install macvim --with-cscope --with-lua --HEAD }
+  end
+  puts
+  puts
+end
+
+def install_with_apt_get
+  run %{which apt-get}
+  if $?.success?
+    puts
+    puts
+    puts "======================================================"
+    puts "Installing packages..."
+    puts "======================================================"
+    puts
+    puts "Installing zsh ..."
+    run %{sudo apt-get install zsh}
+    puts
+    puts "Installing ctags ..."
+    run %{sudo apt-get install ctags}
+    puts
+    puts "Installing git ..."
+    run %{sudo apt-get install git}
+    puts
+    puts "Installing ghi ..."
+    run %{sudo apt-get install ghi}
+    puts
+    puts "Installing tmux ..."
+    run %{sudo apt-get install tmux}
+    puts
+    puts "Installing the_silver_searcher ..."
+    run %{ sudo add-apt-repository ppa:pgolm/the-silver-searcher }
+    run %{ sudo apt-get update }
+    run %{ sudo apt-get install the-silver-searcher }
+    puts
+    puts "Installing fasd ..."
+    run %{wget https://github.com/clvv/fasd/archive/1.0.1.tar.gz }
+    run %{tar xvfz 1.0.1.tar.gz }
+    run %{cd fasd-1.0.1 }
+    run %{sudo make install }
+    run %{cd .. }
+    run %{rm -rf fasd-1.0.1 }
+    run %{rm 1.0.1.tar.gz }
+    puts
+    puts "Installing jslint ..."
+    run %{ wget http://www.javascriptlint.com/download/jsl-0.3.0-src.tar.gz }
+    run %{ tar xvfz jsl-0.3.0-src.tar.gz }
+    run %{ cd jsl-0.3.0/src/ }
+    run %{ make -f Makefile.ref }
+    run %{ sudo cp Linux_All_DBG.OBJ/jsl /usr/local/bin/jsl }
+    run %{ cd ../../ }
+    run %{ rm -rf jsl-0.3.0-src.tar.gz }
+    run %{ rm -rf jsl-0.3.0 }
+    puts
+    puts "Installing macvim-edge ..."
+    run %{ sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev ruby-dev mercurial }
+    run %{ sudo apt-get remove vim vim-runtime gvim vim-tiny vim-common vim-gui-common }
+    run %{ cd ~ }
+    run %{ hg clone https://code.google.com/p/vim/ }
+    run %{ cd vim }
+    run %{ ./configure --with-features=huge --enable-rubyinterp --enable-pythoninterp --with-python-config-dir=/usr/lib/python2.7-config --enable-perlinterp --enable-gui=gtk2 --enable-cscope --prefix=/usr --enable-luainterp }
+    run %{ make VIMRUNTIMEDIR=/usr/share/vim/vim74 }
+    run %{ sudo make install }
   end
   puts
   puts
