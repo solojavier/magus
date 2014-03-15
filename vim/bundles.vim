@@ -39,10 +39,11 @@ NeoBundle "groenewege/vim-less"
 NeoBundle "itspriddle/vim-jquery"
 NeoBundle "jtratner/vim-flavored-markdown"
 NeoBundle "kchmck/vim-coffee-script"
+NeoBundle "AndrewRadev/vim-eco"
 NeoBundle "nelstrom/vim-markdown-preview"
 NeoBundle "slim-template/vim-slim"
 NeoBundle "timcharper/textile.vim"
-NeoBundle "tpope/vim-haml"
+" NeoBundle "tpope/vim-haml"
 NeoBundle "wavded/vim-stylus"
 NeoBundle "vim-scripts/liquid.vim"
 NeoBundle "iakio/smarty3.vim"
@@ -52,6 +53,8 @@ NeoBundle "evanmiller/nginx-vim-syntax"
 NeoBundle "miripiruni/CSScomb-for-Vim"
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "jby/tmux.vim.git"
+NeoBundle "JulesWang/css.vim"
+NeoBundle "cakebaker/scss-syntax.vim"
 
 " Git related...
 NeoBundle "hybridgroup/vim-git-grep-rails-partial"
@@ -89,7 +92,7 @@ NeoBundle "mattn/webapi-vim"
 NeoBundle "rking/ag.vim"
 NeoBundle "scrooloose/nerdtree"
 NeoBundle "scrooloose/syntastic"
-NeoBundle "MarioRicalde/bufexplorer"
+NeoBundle "jlanzarotta/bufexplorer"
 NeoBundle "sjl/gundo.vim"
 NeoBundle "MarioRicalde/vim-qargs"
 NeoBundle "tomtom/tlib_vim"
@@ -117,6 +120,9 @@ NeoBundle "MarioRicalde/stab.vim"
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle "nelstrom/vim-visual-star-search"
 NeoBundle "mattn/emmet-vim"
+NeoBundle 'rizzatti/funcoo.vim'
+NeoBundle 'rizzatti/dash.vim'
+NeoBundle 'chrisbra/NrrwRgn'
 
 
 " Text objects
@@ -139,6 +145,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle "chrisbra/color_highlight"
 NeoBundle "vim-scripts/TagHighlight"
 NeoBundle "bogado/file-line"
+NeoBundle "henrik/vim-indexed-search"
 
 " Customization
 " The plugins listed in ~/.vim/.bundles.local will be added here to
