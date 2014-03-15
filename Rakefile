@@ -236,40 +236,52 @@ def install_with_apt_get
     run %{sudo apt-get install tmux}
     puts
     puts "Installing the_silver_searcher ..."
-    puts "If this process hangs for a bit, please press <ENTER>"
-    run %{ sudo add-apt-repository ppa:pgolm/the-silver-searcher }
-    run %{ sudo apt-get update }
-    run %{ sudo apt-get install the-silver-searcher }
+    run %{ sudo apt-get install silversearcher-ag  }
     puts
     puts "Installing fasd ..."
     run %{wget https://github.com/clvv/fasd/archive/1.0.1.tar.gz }
     run %{tar xvfz ~/.magus/1.0.1.tar.gz }
-    run %{cd ~/.magus/fasd-1.0.1 }
-    run %{sudo make install }
-    run %{cd ~/.magus/ }
+    run %{cd ~/.magus/fasd-1.0.1; sudo make install }
     run %{rm -rf fasd-1.0.1 }
     run %{rm 1.0.1.tar.gz }
     puts
     puts "Installing jslint ..."
     run %{ wget http://www.javascriptlint.com/download/jsl-0.3.0-src.tar.gz }
     run %{ tar xvfz ~/.magus/jsl-0.3.0-src.tar.gz }
-    run %{ cd ~/.magus/jsl-0.3.0/src/ }
-    run %{ make -f Makefile.ref }
-    run %{ sudo cp Linux_All_DBG.OBJ/jsl /usr/local/bin/jsl }
-    run %{cd ~/.magus/ }
-    run %{rm -rf ~/.magus/fasd-1.0.1 }
-    run %{ rm -rf jsl-0.3.0-src.tar.gz }
+    run %{ cd ~/.magus/jsl-0.3.0/src/; make -f Makefile.ref }
+    run %{ sudo cp ~/.magus/jsl-0.3.0/src/Linux_All_DBG.OBJ/jsl /usr/local/bin/jsl }
+    run %{ rm jsl-0.3.0-src.tar.gz }
     run %{ rm -rf jsl-0.3.0 }
     puts
-    puts "Installing macvim-edge ..."
+    puts "Installing vim-edge ..."
     run %{ sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev ruby-dev mercurial }
     run %{ sudo apt-get remove vim vim-runtime gvim vim-tiny vim-common vim-gui-common }
+    run %{
+      sudo apt-get install liblua5.1-dev;
+      sudo mkdir /usr/include/lua5.1/include/;
+      sudo cp /usr/include/lua5.1/* /usr/include/lua5.1/include/;
+      sudo ln -s /usr/lib/x86_64-linux-gnu/liblua5.1.so /usr/local/lib/liblua.so;
+    }
     run %{ hg clone https://code.google.com/p/vim/ ~/.magus/vim-src }
-    run %{ cd ~/.magus/vim-src }
-    run %{ sh ~/.magus/vim-src/configure --with-features=huge --enable-rubyinterp --enable-pythoninterp --with-python-config-dir=/usr/lib/python2.7-config --enable-perlinterp --enable-gui=gtk2 --enable-cscope --prefix=/usr --enable-luainterp }
-    run %{ make VIMRUNTIMEDIR=/usr/share/vim/vim74 }
-    run %{ sudo make install }
-    run %{ cd ~/.magus/ }
+    run %{
+      cd ~/.magus/vim-src;
+      ./configure --with-features=huge \
+        --enable-perlinterp \
+        --enable-rubyinterp \
+        --enable-pythoninterp=yes \
+        --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu \
+        --enable-multibyte \
+        --enable-fontset \
+        --enable-gui=gtk2 \
+        --disable-netbeans \
+        --enable-luainterp=yes \
+        --with-lua-prefix=/usr/include/lua5.1 \
+        --enable-cscope \
+        --enable-largefile \
+        --prefix=/usr;
+      make VIMRUNTIMEDIR=/usr/share/vim/vim74;
+      sudo make install;
+    }
     run %{ rm -rf ~/.magus/vim-src }
   end
   puts
