@@ -201,6 +201,9 @@ def install_homebrew
   puts "Installing jslint ..."
   run %{brew install jslint}
   puts
+  puts "Installing GNU Core Utilities ..."
+  run %{brew install coreutils}
+  puts
   patch=`mvim --version | grep -n '1-\\d' | awk '{print $3}'`.gsub(/\d-/, "").to_i
   if patch <= 885
     puts "Installing macvim-edge ..."
