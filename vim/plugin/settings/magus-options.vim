@@ -17,6 +17,6 @@ else
   " Support for mouse
   set mouse=a 
   " Syntax coloring lines that are too long just slows down the world
-  set synmaxcol=120
+  set synmaxcol=250
   set lazyredraw
 endif
