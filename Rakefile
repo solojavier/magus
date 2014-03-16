@@ -331,6 +331,12 @@ def install_term_theme
   end
 end
 
+def ask(message)
+  puts message
+  return true if STDIN.gets.chomp == 'y'
+  return false
+end
+
 def install_prezto
   puts
   puts "Installing Prezto (ZSH Enhancements)..."
