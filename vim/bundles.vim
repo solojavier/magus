@@ -66,7 +66,7 @@ NeoBundle "tpope/vim-git"
 NeoBundle "mhinz/vim-signify"
 
 " General text editing improvements...
-NeoBundle "hybridgroup/vim-easymotion"
+NeoBundle "Lokaltog/vim-easymotion"
 NeoBundle "AndrewRadev/splitjoin.vim"
 NeoBundle "Raimondi/delimitMate"
 NeoBundle "briandoll/change-inside-surroundings.vim"
@@ -81,7 +81,7 @@ NeoBundle "vim-scripts/camelcasemotion"
 NeoBundle "vim-scripts/matchit.zip"
 
 " General vim improvements
-NeoBundle "hybridgroup/YankRing.vim"
+NeoBundle "vim-scripts/YankRing.vim"
 NeoBundle "hybridgroup/greplace.vim"
 NeoBundle "MarcWeber/vim-addon-mw-utils"
 NeoBundle "bogado/file-line"
