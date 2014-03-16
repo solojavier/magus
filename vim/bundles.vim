@@ -146,6 +146,7 @@ NeoBundle "vim-scripts/TagHighlight"
 NeoBundle "bogado/file-line"
 NeoBundle "henrik/vim-indexed-search"
 NeoBundle "jonathanfilip/vim-lucius"
+NeoBundle "hybridgroup/vim-colors-solarized"
 
 " Customization
 " The plugins listed in ~/.vim/.bundles.local will be added here to
