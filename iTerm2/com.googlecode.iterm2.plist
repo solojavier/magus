@@ -2217,13 +2217,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1259 275 445 270 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1004 515 924 485 0 0 2560 1418 </string>
+	<string>823 499 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
 	<string>992 518 575 748 0 0 2560 1418 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>-2330 732 592 584 -2560 -102 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>795 500 1659 689 0 0 2560 1418 </string>
+	<string>626 789 570 427 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>477 320 1891 909 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -3022,7 +3022,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/mario</string>
+			<string>~</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -3812,7 +3812,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/mario</string>
+			<string>~</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -4602,7 +4602,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/mario</string>
+			<string>~</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -5392,7 +5392,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/mario</string>
+			<string>~</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -6182,7 +6182,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/mario</string>
+			<string>~</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -6972,7 +6972,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/mario</string>
+			<string>~</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -7762,7 +7762,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/mario</string>
+			<string>~</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -8552,7 +8552,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/mario</string>
+			<string>~</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -9342,7 +9342,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/mario</string>
+			<string>~</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -10132,7 +10132,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/mario</string>
+			<string>~</string>
 		</dict>
 	</array>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
