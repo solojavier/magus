@@ -202,9 +202,9 @@ if you don't like them, or make your own.
 
 ### Vim Keymaps
 
-The files in vim/plugin/settings are customizations stored on a per-plugin
-basis. The main keymap is available in skwp-keymap.vim, but some of the vim
-files contain key mappings as well (TODO: probably will move them out to skwp-keymap.vim)
+The files in `vim/plugin/settings` are customizations stored on a per-plugin
+basis. The main keymap is available in magus-keymap.vim, but some of the vim
+files contain key mappings as well (TODO: probably will move them out to magus-keymap.vim)
 
 ### Debugging vim keymappings
 
@@ -255,7 +255,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `//` - clear the search
  * `,T` - Tag list (list of methods in a class)
  * `Ctrl-s` - Open related spec in a split. Similar to :A and :AV from rails.vim but is also aware of the fast_spec dir and faster to type
- * `,,w` (alias `,<esc>`) or `,,b` (alias `,<shift-esc>`) - EasyMotion, a vimperator style tool that highlights jump-points on the screen and lets you type to get there.
+ * `<Space><Space>` - EasyMotion, a vimperator style tool that highlights jump-points on the screen and lets you type to get there.
 
 #### File Navigation
  * `,t` - CtrlP fuzzy file selector
