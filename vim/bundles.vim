@@ -124,7 +124,6 @@ NeoBundle 'rizzatti/funcoo.vim'
 NeoBundle 'rizzatti/dash.vim'
 NeoBundle 'chrisbra/NrrwRgn'
 
-
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"
 NeoBundle "bootleq/vim-textobj-rubysymbol"
