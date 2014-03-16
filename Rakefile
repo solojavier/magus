@@ -301,67 +301,33 @@ end
 
 def install_term_theme
   puts "======================================================"
-  puts "Installing iTerm2 solarized theme."
+  puts "iTerm Setup"
   puts "======================================================"
-  run %{ /usr/libexec/PlistBuddy -c "Add :'Custom Color Presets':'Solarized Light' dict" ~/Library/Preferences/com.googlecode.iterm2.plist }
-  run %{ /usr/libexec/PlistBuddy -c "Merge 'iTerm2/Solarized Light.itermcolors' :'Custom Color Presets':'Solarized Light'" ~/Library/Preferences/com.googlecode.iterm2.plist }
-  run %{ /usr/libexec/PlistBuddy -c "Add :'Custom Color Presets':'Solarized Dark' dict" ~/Library/Preferences/com.googlecode.iterm2.plist }
-  run %{ /usr/libexec/PlistBuddy -c "Merge 'iTerm2/Solarized Dark.itermcolors' :'Custom Color Presets':'Solarized Dark'" ~/Library/Preferences/com.googlecode.iterm2.plist }
 
-  # If iTerm2 is not installed or has never run, we can't autoinstall the profile since the plist is not there
+  # If iTerm2 is not installed or has never run we can't do anything.
   if !File.exists?(File.join(ENV['HOME'], '/Library/Preferences/com.googlecode.iterm2.plist'))
     puts "======================================================"
-    puts "To make sure your profile is using the solarized theme"
-    puts "Please check your settings under:"
-    puts "Preferences> Profiles> [your profile]> Colors> Load Preset.."
+    puts "iTerm2 is not installed or has not been open, please "
+    puts "try again."
     puts "======================================================"
     return
   end
 
-  # Ask the user which theme he wants to install
-  message = "Which theme would you like to apply to your iTerm2 profile?"
-  color_scheme = ask message, iTerm_available_themes
-  color_scheme_file = File.join('iTerm2', "#{color_scheme}.itermcolors")
-
-  # Ask the user on which profile he wants to install the theme
-  profiles = iTerm_profile_list
-  message = "I've found #{profiles.size} #{profiles.size>1 ? 'profiles': 'profile'} on your iTerm2 configuration, which one would you like to apply the Solarized theme to?"
-  profiles << 'All'
-  selected = ask message, profiles
-  
-  if selected == 'All'
-    (profiles.size-1).times { |idx| apply_theme_to_iterm_profile_idx idx, color_scheme_file }
-  else
-    apply_theme_to_iterm_profile_idx profiles.index(selected), color_scheme_file
+  # Make sure that the user configures iTerm correctly.
+  # You can't modify iTerm2 plist on the fly with iTerm open, so yeah, not much we can do.
+  while true do
+    break unless %x{ defaults read ~/Library/Preferences/com.googlecode.iterm2.plist | grep "LoadPrefsFromCustomFolder = 1" }.empty?
+    puts ""
+    puts "Please complete the following steps:"
+    puts " 1. Open iTerm Preferences > General "
+    puts " 2. In the bottom Left, enable the checkbox that reads"
+    puts "    'Load Preferneces from a Custom Folder'"
+    puts " 3. Click the input and Add the following path: "
+    puts "      ~/.magus/iTerm2/"
+    puts " 4. Close the Preferences Window."
+    puts " "
+    break unless ask('The steps above have not been completed yet, should I check again? [y] or [n]')
   end
-end
-
-def iTerm_available_themes
-   Dir['iTerm2/*.itermcolors'].map { |value| File.basename(value, '.itermcolors')}
-end
-
-def iTerm_profile_list
-  profiles=Array.new
-  begin
-    profiles <<  %x{ /usr/libexec/PlistBuddy -c "Print :'New Bookmarks':#{profiles.size}:Name" ~/Library/Preferences/com.googlecode.iterm2.plist 2>/dev/null}
-  end while $?.exitstatus==0
-  profiles.pop
-  profiles
-end
-
-def ask(message, values)
-  puts message
-  while true
-    values.each_with_index { |val, idx| puts " #{idx+1}. #{val}" }
-    selection = STDIN.gets.chomp
-    if (Float(selection)==nil rescue true) || selection.to_i < 0 || selection.to_i > values.size+1
-      puts "ERROR: Invalid selection.\n\n"
-    else
-      break
-    end
-  end 
-  selection = selection.to_i-1
-  values[selection]
 end
 
 def install_prezto
@@ -448,15 +414,6 @@ end
 def list_vim_submodules
   result=`git submodule -q foreach 'echo $name"||"\`git remote -v | awk "END{print \\\\\$2}"\`'`.select{ |line| line =~ /^vim.bundle/ }.map{ |line| line.split('||') }
   Hash[*result.flatten]
-end
-
-def apply_theme_to_iterm_profile_idx(index, color_scheme_path)
-  values = Array.new
-  16.times { |i| values << "Ansi #{i} Color" }
-  values << ['Background Color', 'Bold Color', 'Cursor Color', 'Cursor Text Color', 'Foreground Color', 'Selected Text Color', 'Selection Color']
-  values.flatten.each { |entry| run %{ /usr/libexec/PlistBuddy -c "Delete :'New Bookmarks':#{index}:'#{entry}'" ~/Library/Preferences/com.googlecode.iterm2.plist } }
-
-  run %{ /usr/libexec/PlistBuddy -c "Merge '#{color_scheme_path}' :'New Bookmarks':#{index}" ~/Library/Preferences/com.googlecode.iterm2.plist }
 end
 
 def success_msg(action)

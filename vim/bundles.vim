@@ -140,12 +140,12 @@ NeoBundle "thinca/vim-textobj-function-javascript"
 NeoBundle "vim-scripts/argtextobj.vim"
 
 " Cosmetics, color scheme, Powerline...
-NeoBundle "hybridgroup/vim-colors-solarized"
 NeoBundle 'bling/vim-airline'
 NeoBundle "chrisbra/color_highlight"
 NeoBundle "vim-scripts/TagHighlight"
 NeoBundle "bogado/file-line"
 NeoBundle "henrik/vim-indexed-search"
+NeoBundle "jonathanfilip/vim-lucius"
 
 " Customization
 " The plugins listed in ~/.vim/.bundles.local will be added here to

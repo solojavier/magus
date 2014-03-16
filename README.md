@@ -27,15 +27,15 @@ from scouring other people's dotfile repos, blogs, and projects.
 
 ## What is Magus?
 
-  * Vim is the best editor. Zsh is the best shell. Pry is the best irb. Solarized is the best color scheme.
-  * Optimized support for Solarized color scheme only, everything guaranteed to Look Good. Your eyes will thank you.
+  * Vim is the best editor. Zsh is the best shell. Pry is the best irb. Lucius is the best color scheme.
+  * Optimized support for Lucius color scheme only, everything guaranteed to Look Good. Your eyes will thank you.
   * All common commands should be two and three character mnemonic aliases - less keystrokes, RSI reduction
   * Easy to use plugin architecture, no config files to edit.
   * Pick one tool and use it everywhere: vim-ize everything
   * Beautiful, easy to read and small `vimrc`
   * No key overrides or custom hackery in vimrc, everything in well factored snippets in `.vim/plugin/settings`
   * Much larger list of vim plugins than Janus, easily configurable for differnt development environments.
-  * All plugins tested with Solarized and custom color maps provided where needed to ensure your eyes will not bleed.
+  * All plugins tested with Lucius and custom color maps provided where needed to ensure your eyes will not bleed.
   * No configuration file to maintain. Magus uses tiny ruby scripts to wrap git submodule maintenance. (Powered by YADR)
   * More than just vim plugins - great shell aliases, osx, and irb/pry tweaks to make you more productive.
 
@@ -59,7 +59,7 @@ sh -c "`curl -fsSL https://raw.github.com/marioricalde/magus/magus/install.sh`" 
 
 # Additional Installation
 
- * [Highly recommended: Install iTerm theme](https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized)
+ * [Highly recommended: Install iTerm theme](https://github.com/jonathanfilip/lucius/tree/master/iterm2)
  * [Highly recommended: Remap caps-lock to escape with PCKeyboardHack](http://pqrs.org/macosx/keyremap4macbook/pckeyboardhack.html)
 
 The escape key is the single most used key in vim.
@@ -427,7 +427,7 @@ In Normal Mode:
 #### Colors
 
  * AnsiEsc - inteprets ansi color codes inside log files. great for looking at Rails logs
- * solarized - a color scheme scientifically calibrated for awesomeness (including skwp mods for ShowMarks) use `:Dark` or `:Light` to quickly switch schemes.
+ * lucius - a color scheme with neutral colors for Light on Dark and Dark on Light.
  * Airline - beautiful vim status bar. Requires patched fonts (installed from fonts/ directory)
 
 #### Coding
@@ -549,7 +549,7 @@ work by tpope, scrooloose, and many hours of scouring blogs, vimscripts,
 and other places for the cream of the crop of vim awesomeness.
 
  * https://github.com/skwp
- * http://ethanschoonover.com/solarized - a scientifically calibrated color scheme
+ * http://www.vim.org/scripts/script.php?script_id=2536
  * https://github.com/astrails/dotvim
  * https://github.com/carlhuda/janus
  * https://github.com/tpope

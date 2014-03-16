@@ -40,11 +40,11 @@ function prompt_skwp_setup {
   # Use extended color pallete if available.
   if [[ $TERM = *256color* || $TERM = *rxvt* ]]; then
     __PROMPT_SKWP_COLORS=(
-      "%F{81}"  # turquoise
-      "%F{166}" # orange
-      "%F{135}" # purple
-      "%F{161}" # hotpink
-      "%F{118}" # limegreen
+      "%F{33}"  # blue
+      "%F{130}" # orange
+      "%F{133}" # purple
+      "%F{178}" # yellow
+      "%F{64}" # green
     )
   else
     __PROMPT_SKWP_COLORS=(
