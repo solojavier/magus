@@ -26,16 +26,17 @@ task :install => [:submodule_init, :submodules] do
   file_operation(Dir.glob('ctags/*')) if want_to_install?('ctags config (better js/ruby support)')
   file_operation(Dir.glob('tmux/*')) if want_to_install?('tmux config')
   file_operation(Dir.glob('vimify/*')) if want_to_install?('vimification of command line tools')
-  if want_to_install?('vim configuration (highly recommended)')
-    file_operation(Dir.glob('{vim,vimrc}')) 
-    Rake::Task["install_neobundle"].execute
-  end
 
   Rake::Task["install_prezto"].execute
 
   install_fonts if RUBY_PLATFORM.downcase.include?("darwin")
 
   install_term_theme if RUBY_PLATFORM.downcase.include?("darwin")
+
+  if want_to_install?('vim configuration (highly recommended)')
+    file_operation(Dir.glob('{vim,vimrc}')) 
+    Rake::Task["install_neobundle"].execute
+  end
 
   success_msg("installed")
 end
