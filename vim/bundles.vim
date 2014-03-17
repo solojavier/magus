@@ -76,6 +76,7 @@ NeoBundle "godlygeek/tabular"
 NeoBundle "honza/vim-snippets"
 NeoBundle "nelstrom/vim-visual-star-search"
 NeoBundle "tomtom/tcomment_vim"
+NeoBundle "vim-scripts/IndexedSearch"
 NeoBundle "vim-scripts/camelcasemotion"
 NeoBundle "vim-scripts/matchit.zip"
 
