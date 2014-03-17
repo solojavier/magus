@@ -37,12 +37,6 @@ noremap  ;/ /
 nmap ;n <Plug>(easymotion-sn)<C-p>
 map ;N <Plug>(easymotion-bd-n)
 
-set nohlsearch " use EasyMotion highlight
-nmap n <Plug>(easymotion-next)<Plug>(anzu-update-search-status)zv
-nmap N <Plug>(easymotion-prev)<Plug>(anzu-update-search-status)zv
-xmap n <Plug>(easymotion-next)zv
-xmap N <Plug>(easymotion-prev)zv
-
 " Replace defaut
 " smart f & F / t & T
 omap f <Plug>(easymotion-bd-fl)
