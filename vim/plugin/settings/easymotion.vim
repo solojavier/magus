@@ -2,16 +2,6 @@
 " hand home row keys as navigation options which 
 " may mean more typing to get to a particular spot
 " but it'll all be isolated to one area of the keyboard
-" call EasyMotion#InitOptions({
-" \   'leader_key'      : '<Leader><Leader>'
-" \ , 'keys'            : 'fjdksewoavn'
-" \ , 'do_shade'        : 1
-" \ , 'do_mapping'      : 1
-" \ , 'grouping'        : 1
-" \
-" \ , 'hl_group_target' : 'Question'
-" \ , 'hl_group_shade'  : 'EasyMotionShade'
-" \ })
 
 let g:EasyMotion_keys = 'asdfghjklqwertyuiopcvbn'
 let g:EasyMotion_use_upper = 1
@@ -30,11 +20,10 @@ let g:EasyMotion_space_jump_first = 1
 let g:EasyMotion_cursor_highlight = 1
 
 " Extend search
-map  / <Plug>(easymotion-sn)
-xmap / <Esc><Plug>(easymotion-sn)\v%V
-omap / <Plug>(easymotion-tn)
-noremap  ;/ /
-nmap ;n <Plug>(easymotion-sn)<C-p>
+map  :/ <Plug>(easymotion-sn)
+xmap :/ <Esc><Plug>(easymotion-sn)\v%V
+omap :/ <Plug>(easymotion-tn)
+nmap :n <Plug>(easymotion-sn)<C-p>
 map ;N <Plug>(easymotion-bd-n)
 
 " Replace defaut
