@@ -20,10 +20,10 @@ let g:EasyMotion_space_jump_first = 1
 let g:EasyMotion_cursor_highlight = 1
 
 " Extend search
-map  :/ <Plug>(easymotion-sn)
-xmap :/ <Esc><Plug>(easymotion-sn)\v%V
-omap :/ <Plug>(easymotion-tn)
-nmap :n <Plug>(easymotion-sn)<C-p>
+map  ,/ <Plug>(easymotion-sn)
+xmap ,/ <Esc><Plug>(easymotion-sn)\v%V
+omap ,/ <Plug>(easymotion-tn)
+nmap ,n <Plug>(easymotion-sn)<C-p>
 map ;N <Plug>(easymotion-bd-n)
 
 " Replace defaut
