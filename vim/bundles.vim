@@ -76,7 +76,6 @@ NeoBundle "godlygeek/tabular"
 NeoBundle "honza/vim-snippets"
 NeoBundle "nelstrom/vim-visual-star-search"
 NeoBundle "tomtom/tcomment_vim"
-NeoBundle "vim-scripts/IndexedSearch"
 NeoBundle "vim-scripts/camelcasemotion"
 NeoBundle "vim-scripts/matchit.zip"
 
@@ -143,7 +142,6 @@ NeoBundle 'bling/vim-airline'
 NeoBundle "chrisbra/color_highlight"
 NeoBundle "vim-scripts/TagHighlight"
 NeoBundle "bogado/file-line"
-NeoBundle "henrik/vim-indexed-search"
 NeoBundle "jonathanfilip/vim-lucius"
 NeoBundle "hybridgroup/vim-colors-solarized"
 
