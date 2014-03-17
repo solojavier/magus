@@ -1,10 +1,10 @@
 " This remaps easymotion to show us only the left
-" hand home row keys as navigation options which 
+" hand home row keys as navigation options which
 " may mean more typing to get to a particular spot
 " but it'll all be isolated to one area of the keyboard
 
-let g:EasyMotion_keys = 'asdfghjklqwertyuiopcvbn'
 let g:EasyMotion_use_upper = 1
+let g:EasyMotion_keys = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ:'
 
 " keep cursor column
 let g:EasyMotion_startofline = 0
@@ -18,6 +18,24 @@ let g:EasyMotion_space_jump_first = 1
 
 " Highlight cursor
 let g:EasyMotion_cursor_highlight = 1
+
+" EasyMotion Regrex {{{
+let g:EasyMotion_re_line_anywhere = '\v' .
+            \  '(<.|^.)' . '|' .
+            \  '(.>|.$)' . '|' .
+            \  '(\s+\zs.)' . '|' .
+            \  '(\l)\zs(\u)' . '|' .
+            \  '(_\zs.)' . '|' .
+            \  '(#\zs.)'
+let g:EasyMotion_re_anywhere = '\v' .
+            \  '(<.|^)' . '|' .
+            \  '(.$)' . '|' .
+            \  '(\s+\zs.)' . '|' .
+            \  '(\l)\zs(\u)' . '|' .
+            \  '(_\zs.)' . '|' .
+            \  '(/\zs.)' . '|' .
+            \  '(#\zs.)'
+"}}}
 
 " Extend search
 map  ,/ <Plug>(easymotion-sn)
