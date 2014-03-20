@@ -18,6 +18,7 @@ task :install => [:submodule_init, :submodules] do
   if want_to_install?('git configs (color, aliases)')
     file_operation(Dir.glob('git/*'))
     run %{ git config --global core.excludesfile ~/.gitignore }
+    run %{ mkdir ~/.git_template }
   end
 
   file_operation(Dir.glob('irb/*')) if want_to_install?('irb/pry configs (more colorful)')
