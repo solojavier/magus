@@ -143,7 +143,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle "chrisbra/color_highlight"
 NeoBundle "vim-scripts/TagHighlight"
 NeoBundle "bogado/file-line"
-NeoBundle "jonathanfilip/vim-lucius"
+NeoBundle "MarioRicalde/vim-lucius"
 NeoBundle "hybridgroup/vim-colors-solarized"
 
 " Customization
