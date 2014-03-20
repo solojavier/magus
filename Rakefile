@@ -35,7 +35,7 @@ task :install => [:submodule_init, :submodules] do
   install_term_theme if RUBY_PLATFORM.downcase.include?("darwin")
 
   if want_to_install?('vim configuration (highly recommended)')
-    file_operation(Dir.glob('{vim,vimrc}')) 
+    file_operation(Dir.glob('{vim,vimrc}'))
     Rake::Task["install_neobundle"].execute
   end
 
@@ -49,8 +49,6 @@ task :install_prezto do
 end
 
 task :update do
-  Rake::Task["neobundle_migration_from_pathogen"].execute if needs_migration_from_pathogen?
-  Rake::Task["neobundle_migration_from_vundle"].execute if needs_migration_from_vundle?
   Rake::Task["install"].execute
   #TODO: for now, we do the same as install. But it would be nice
   #not to clobber zsh files
@@ -78,38 +76,6 @@ task :submodules do
   end
 end
 
-desc "Performs migration from pathogen to NeoBundle"
-task :neobundle_migration_from_pathogen do
-  puts "========================================================"
-  puts "Migrating from pathogen to NeoBundle vim plugin manager."
-  puts "This will move the old .vim/bundle directory to" 
-  puts ".vim/bundle.old and replacing all your vim plugins with"
-  puts "the standard set of plugins. You will then be able to "
-  puts "manage your vim's plugin configuration by editing the "
-  puts "file .vim/bundles.vim"
-  puts "========================================================"
-
-  Dir.glob(File.join('vim', 'bundle','**')) do |sub_path|
-    run %{git config -f #{File.join('.git', 'config')} --remove-section submodule.#{sub_path}}
-    # `git rm --cached #{sub_path}`
-    FileUtils.rm_rf(File.join('.git', 'modules', sub_path))
-  end
-  FileUtils.mv(File.join('vim','bundle'), File.join('vim', 'bundle.old'))
-end
-
-desc "Performs migration from Vundle to NeoBundle"
-task :neobundle_migration_from_vundle do
-  puts "========================================================"
-  puts "Migrating from Vundle to NeoBundle vim plugin manager."
-  puts "This will delete everything inside .vim/bundle/ so"
-  puts "NeoBundle can re-fetch them and manage them on its way."
-  puts "You will then be able to manage your vim's plugin"
-  puts "configuration by editing the file .vim/bundles.vim"
-  puts "========================================================"
-
-  FileUtils.rm_rf(Dir.glob(File.join('vim', 'bundle','*')))
-end
-
 desc "Runs NeoBundle installer in a clean vim environment"
 task :install_neobundle do
   puts "======================================================"
@@ -123,7 +89,7 @@ task :install_neobundle do
   puts "======================================================"
 
   puts ""
-  
+
   run %{
     cd $HOME/.magus
     git clone https://github.com/Shougo/neobundle.vim #{File.join('vim','bundle', 'neobundle.vim')}
@@ -411,14 +377,6 @@ def file_operation(files, method = :symlink)
   end
 end
 
-def needs_migration_from_pathogen?
-  File.exists? File.join('vim', 'bundle', 'tpope-vim-pathogen')
-end
-
-def needs_migration_from_vundle?
-  File.exists? File.join('vim', 'vundles.vim')
-end
-
 def list_vim_submodules
   result=`git submodule -q foreach 'echo $name"||"\`git remote -v | awk "END{print \\\\\$2}"\`'`.select{ |line| line =~ /^vim.bundle/ }.map{ |line| line.split('||') }
   Hash[*result.flatten]
@@ -438,7 +396,7 @@ def success_msg(action)
   puts "_M_      _MM_`YMMM9'Yb.YMMMMb.   YMMM9MM_MYMMMM9  "
   puts "                      6M    Yb                    "
   puts "                      YM.   d9   Powered by YADR  "
-  puts "                       YMMMM9                     " 
+  puts "                       YMMMM9                     "
   puts ""
   puts "Magus has been #{action}. Please restart your terminal and vim."
 end
