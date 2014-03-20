@@ -81,7 +81,7 @@ NeoBundle "vim-scripts/camelcasemotion"
 NeoBundle "vim-scripts/matchit.zip"
 
 " General vim improvements
-NeoBundle "vim-scripts/YankRing.vim"
+" NeoBundle "vim-scripts/YankRing.vim"
 NeoBundle "hybridgroup/greplace.vim"
 NeoBundle "MarcWeber/vim-addon-mw-utils"
 NeoBundle "bogado/file-line"
