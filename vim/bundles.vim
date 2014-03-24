@@ -80,6 +80,7 @@ NeoBundle "vim-scripts/IndexedSearch"
 NeoBundle "vim-scripts/camelcasemotion"
 NeoBundle "vim-scripts/matchit.zip"
 NeoBundle "tommcdo/vim-exchange"
+NeoBundle "gorodinskiy/vim-coloresque"
 
 " General vim improvements
 " NeoBundle "vim-scripts/YankRing.vim"
