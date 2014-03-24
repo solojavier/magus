@@ -79,6 +79,7 @@ NeoBundle "tomtom/tcomment_vim"
 NeoBundle "vim-scripts/IndexedSearch"
 NeoBundle "vim-scripts/camelcasemotion"
 NeoBundle "vim-scripts/matchit.zip"
+NeoBundle "tommcdo/vim-exchange"
 
 " General vim improvements
 " NeoBundle "vim-scripts/YankRing.vim"
