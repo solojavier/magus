@@ -58,7 +58,7 @@ NeoBundle "cakebaker/scss-syntax.vim"
 
 " Git related...
 NeoBundle "hybridgroup/vim-git-grep-rails-partial"
-NeoBundle "gregsexton/gitv"
+NeoBundle "MarioRicalde/gitv"
 NeoBundle "mattn/gist-vim"
 NeoBundle "tjennings/git-grep-vim"
 NeoBundle "tpope/vim-fugitive"
