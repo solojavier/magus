@@ -3,7 +3,7 @@ set splitbelow
 " New split will appear the right.
 set splitright
 " Timout wait for <leader> keys
-set timeoutlen=245
+set timeoutlen=250
 if has("gui_running")
   " Disable the scrollbars (NERDTree)
   set guioptions-=r
