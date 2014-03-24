@@ -1,16 +1,16 @@
-    `MMb     dMM'                                    
-     MMM.   ,PMM   Like Janus, but with more Magic!  
-     M`Mb   d'MM    ___     __     ___   ___   ____  
+    `MMb     dMM'
+     MMM.   ,PMM   Like Janus, but with more Magic!
+     M`Mb   d'MM    ___     __     ___   ___   ____
      M YM. ,P MM  6MMMMb   6MMbMMM `MM    MM  6MMMMb\
      M `Mb d' MM 8M'  `Mb 6M'`Mb    MM    MM MM'    `
-     M  YM.P  MM     ,oMM MM  MM    MM    MM YM.     
-     M  `Mb'  MM ,6MM9'MM YM.,M9    MM    MM  YMMMMb 
+     M  YM.P  MM     ,oMM MM  MM    MM    MM YM.
+     M  `Mb'  MM ,6MM9'MM YM.,M9    MM    MM  YMMMMb
      M   YP   MM MM'   MM  YMM9     MM    MM      `Mb
      M   `'   MM MM.  ,MM (M        YM.   MM L    ,MM
-    _M_      _MM_`YMMM9'Yb.YMMMMb.   YMMM9MM_MYMMMM9 
-                          6M    Yb                   
-                          YM.   d9   Powered by YADR 
-                           YMMMM9                    
+    _M_      _MM_`YMMM9'Yb.YMMMMb.   YMMM9MM_MYMMMM9
+                          6M    Yb
+                          YM.   d9   Powered by YADR
+                           YMMMM9
 
     # Like Janus, but with more Magic.
     # The ultimate dotfiles distribution, compatible with MacOSX and Ubuntu!
@@ -159,7 +159,7 @@ Next time you load your shell, this file will be read and your prompt will be th
 
 The usage of Vim and Tmux is recommended. For this sole purpose we've included [tmuxinator](https://github.com/aziz/tmuxinator), which provides an easy way to create and reuse sessions.
 
-### [Pry](http://pry.github.com/) 
+### [Pry](http://pry.github.com/)
 Pry offers a much better out of the box IRB experience with colors, tab completion, and lots of other tricks. You can also use it
 as an actual debugger on MRI 1.9.2+ by installing [pry-debugger](https://github.com/nixme/pry-debugger).
 
@@ -338,7 +338,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `<C-r>` - (r)eplace selected text across document
  * `K` - split line, the opposite of J (join line)
  * `gp` - Visually select last pasted content.
- 
+
 
 #### Git Utilities
 
@@ -470,8 +470,8 @@ In Normal Mode:
  * yankring - effortless sanity for pasting. every time you yank something it goes into a buffer. after hitting p to paste, use ctrl-p or ctrl-n to cycle through the paste options. great for when you accidentally overwrite your yank with a delete.
  * surround - super easy quote and tag manipulation - ysiw" - sourround inner word with quotes. ci"' - change inner double quotes to single quotes, etc
  * greplace - use :Gsearch to find across many files, replace inside the changes, then :Greplace to do a replace across all matches - made lightning fast with Silver Searcher. This solution is usually not fast when you have too many replacements, if that's your case checkout `Qargs`.
- * Qargs - execute commands on Quickfix lists. Example: use `:Ag` to find across many files, then use `:Qargs | Argdo %s/pattern/replacement/g` replace across all matches. 
- * VimShell - Shell implemented with VimScript. Use `:VimShell` to run. 
+ * Qargs - execute commands on Quickfix lists. Example: use `:Ag` to find across many files, then use `:Qargs | Argdo %s/pattern/replacement/g` replace across all matches.
+ * VimShell - Shell implemented with VimScript. Use `:VimShell` to run.
  * vim-markdown-preview - :Mm to view your README.md as html
  * html-escape - ,he and ,hu to escape and unescape html
  * ruby-debug-ide - not quite working for me, but maybe it will for you. supposedly a graphical debugger you can step through
@@ -510,7 +510,7 @@ Add a plugin
 
     yav -u https://github.com/airblade/vim-rooter
 
-Delete a plugin 
+Delete a plugin
 
     ydv -u airblade/vim-rooter
 
