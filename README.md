@@ -13,12 +13,12 @@
                            YMMMM9                    
 
     # Like Janus, but with more Magic.
-    # The ultimate dotfiles distribution.
+    # The ultimate dotfiles distribution, compatible with MacOSX and Ubuntu!
 
       sh -c "`curl -fsSL https://raw.github.com/marioricalde/magus/magus/install.sh`"
 
 
-**Important**: As of right now this is only compatible with MacOSX. Although we **definitely** want to support every *nix system out there.
+**Important**: As of right now we're officially supporting MacOSX and Ubuntu. Use the same installation method above.
 
 **Always be sure to run `rake update` after pulling to ensure plugins are updated**
 
@@ -378,7 +378,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `,gsx` - `:Git stash drop`
  * `,gsl` - `:Git stash list`
 
-##### Diff (d)
+##### Diff gd)
  * `,gs` -  `:Git stash`
  * `,dg` - `:diffget`
  * `,dp` - `:diffput`
