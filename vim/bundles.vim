@@ -30,6 +30,7 @@ NeoBundle "vim-ruby/vim-ruby"
 NeoBundle "vim-scripts/Specky"
 NeoBundle "ck3g/vim-change-hash-syntax"
 NeoBundle "tpope/vim-bundler"
+NeoBundle "thoughtbot/vim-rspec"
 
 " Other Languages
 NeoBundle "hybridgroup/vim-html-escape"
