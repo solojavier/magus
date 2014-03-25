@@ -56,6 +56,7 @@ NeoBundle "pangloss/vim-javascript"
 NeoBundle "jby/tmux.vim.git"
 NeoBundle "JulesWang/css.vim"
 NeoBundle "cakebaker/scss-syntax.vim"
+NeoBundle "jnwhiteh/vim-golang"
 
 " Git related...
 NeoBundle "hybridgroup/vim-git-grep-rails-partial"
