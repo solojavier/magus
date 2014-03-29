@@ -199,8 +199,9 @@ def install_homebrew
   if patch <= 885
     puts "Installing macvim-edge ..."
     run %{ brew uninstall macvim }
-    run %{ brew install macvim --with-cscope --with-lua --HEAD }
+    run %{ brew install macvim --with-cscope --with-lua --HEAD --override-system-vim }
   end
+  run %{ brew linkapps }
   puts
   puts
 end
