@@ -4,6 +4,8 @@
 colorscheme lucius
 LuciusLight
 
+set cursorline
+
 set guifont=PragmataPro:h16,Inconsolata\ XL:h17,Inconsolata:h20,Monaco:h17
 
 " Set the window minimum height
