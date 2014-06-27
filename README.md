@@ -307,7 +307,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
 
 #### NERDTree Project Tree
 
- * `,s` - NERDTree toggle
+ * `,s` - NERDTree focus, to close it press `Q`
  * `,sf` - Show current file tree
 
 #### Utility
@@ -469,8 +469,7 @@ In Normal Mode:
  * tabularize - align code effortlessly by using :Tabularize /[character] to align by a character, or try the keymaps
  * yankring - effortless sanity for pasting. every time you yank something it goes into a buffer. after hitting p to paste, use ctrl-p or ctrl-n to cycle through the paste options. great for when you accidentally overwrite your yank with a delete.
  * surround - super easy quote and tag manipulation - ysiw" - sourround inner word with quotes. ci"' - change inner double quotes to single quotes, etc
- * greplace - use :Gsearch to find across many files, replace inside the changes, then :Greplace to do a replace across all matches - made lightning fast with Silver Searcher. This solution is usually not fast when you have too many replacements, if that's your case checkout `Qargs`.
- * Qargs - execute commands on Quickfix lists. Example: use `:Ag` to find across many files, then use `:Qargs | Argdo %s/pattern/replacement/g` replace across all matches.
+ * Qargs - execute commands on Quickfix lists. Example: use `:Ag someterm` to find across many files, and then `:Qdo %s//some-other-term/g` replace across all matches.
  * VimShell - Shell implemented with VimScript. Use `:VimShell` to run.
  * vim-markdown-preview - :Mm to view your README.md as html
  * html-escape - ,he and ,hu to escape and unescape html
