@@ -1,5 +1,5 @@
 " Hotkeys
-nmap <leader>s :NERDTreeToggle<cr>
+nmap <leader>s :NERDTreeFocus<cr>
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
 nnoremap <silent> <leader>sf :NERDTreeFind<CR>:vertical res 30<CR>
 
