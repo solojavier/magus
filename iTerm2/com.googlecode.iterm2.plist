@@ -2158,7 +2158,7 @@
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTab</key>
-	<true/>
+	<false/>
 	<key>HideTabCloseButton</key>
 	<false/>
 	<key>HideTabNumber</key>
@@ -2182,7 +2182,7 @@
 	<key>IRMemory</key>
 	<integer>4</integer>
 	<key>JobName</key>
-	<true/>
+	<false/>
 	<key>LeftCommand</key>
 	<integer>7</integer>
 	<key>LeftOption</key>
@@ -2203,6 +2203,23 @@
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
+	<key>NSTableView Columns KeyBingingTable</key>
+	<array>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATCG
+		</data>
+		<string>198</string>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATGG
+		</data>
+		<string>287</string>
+	</array>
+	<key>NSTableView Hidden Columns KeyBingingTable</key>
+	<array/>
+	<key>NSTableView Sort Ordering KeyBingingTable</key>
+	<array/>
 	<key>NSToolbar Configuration Terminal Toolbar</key>
 	<dict>
 		<key>TB Display Mode</key>
@@ -2217,17 +2234,17 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1259 275 445 270 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>823 499 924 485 0 0 2560 1418 </string>
+	<string>372 116 605 485 0 0 1600 878 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
-	<string>992 518 575 748 0 0 2560 1418 </string>
+	<string>766 400 1027 905 0 0 2560 1418 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
-	<string>-2330 732 592 584 -2560 -102 2560 1418 </string>
+	<string>2790 730 592 584 2560 -104 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>626 789 570 427 0 0 2560 1418 </string>
+	<string>0 7 2558 1403 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>477 320 1891 909 0 0 2560 1418 </string>
+	<string>235 138 618 500 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>368 63 700 502 0 0 2560 1418 </string>
+	<string>59 135 961 914 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>826 513 650 502 0 0 2560 1418 </string>
 	<key>NeverWarnAboutShortLivedSessions_8E966E5D-271B-493B-8293-527683B8CAE2</key>
@@ -10135,6 +10152,10 @@
 			<string>~</string>
 		</dict>
 	</array>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
 	<key>OnlyWhenMoreTabs</key>
@@ -10197,7 +10218,7 @@
 	<key>RightOption</key>
 	<integer>3</integer>
 	<key>SUAutomaticallyUpdate</key>
-	<false/>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
@@ -10205,7 +10226,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-03-16T08:35:07Z</date>
+	<date>2014-06-12T14:00:27Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -10231,7 +10252,7 @@
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1394959104</real>
+	<real>1395790592</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -10245,7 +10266,7 @@
 	<key>WebKitStandardFont</key>
 	<string>Lucida Grande</string>
 	<key>WindowNumber</key>
-	<true/>
+	<false/>
 	<key>WindowStyle</key>
 	<integer>0</integer>
 	<key>WordCharacters</key>
@@ -10255,6 +10276,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20140316-nightly</string>
+	<string>1.0.0.20140610-nightly</string>
 </dict>
 </plist>
