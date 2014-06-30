@@ -2214,7 +2214,7 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>287</string>
+		<string>307</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
@@ -2234,13 +2234,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1259 275 445 270 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>372 116 605 485 0 0 1600 878 </string>
+	<string>554 450 937 465 0 0 2560 1418 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
 	<string>766 400 1027 905 0 0 2560 1418 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>2790 730 592 584 2560 -104 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 7 2558 1403 0 0 2560 1418 </string>
+	<string>0 0 1507 1418 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>235 138 618 500 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -10226,7 +10226,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-06-12T14:00:27Z</date>
+	<date>2014-06-29T21:32:05Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -10242,7 +10242,7 @@
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
-	<integer>5</integer>
+	<integer>6</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
@@ -10276,6 +10276,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20140610-nightly</string>
+	<string>1.0.0.20140628-nightly</string>
 </dict>
 </plist>
