@@ -243,8 +243,9 @@ map <silent> ,hp :!open -a Safari %<CR><CR>
 " ============================
 " Spacing Helper
 " ============================
+map ✠ <S-CR>
 nmap <CR> o<Esc>
-nmap <S-Enter> O<Esc>
+nmap <S-CR> O<Esc>
 
 " ============================
 " Tabs Helper
