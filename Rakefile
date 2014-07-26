@@ -216,22 +216,22 @@ def install_with_apt_get
     puts "======================================================"
     puts
     puts "Installing zsh ..."
-    run %{sudo apt-get install zsh}
+    run %{sudo apt-get -y install zsh}
     puts
     puts "Installing ctags ..."
-    run %{sudo apt-get install ctags}
+    run %{sudo apt-get -y install ctags}
     puts
     puts "Installing git ..."
-    run %{sudo apt-get install git}
+    run %{sudo apt-get -y install git}
     puts
     puts "Installing ghi ..."
-    run %{sudo apt-get install ghi}
+    run %{sudo apt-get -y install ghi}
     puts
     puts "Installing tmux ..."
-    run %{sudo apt-get install tmux}
+    run %{sudo apt-get -y install tmux}
     puts
     puts "Installing the_silver_searcher ..."
-    run %{ sudo apt-get install silversearcher-ag  }
+    run %{ sudo apt-get -y install silversearcher-ag  }
     puts
     puts "Installing fasd ..."
     run %{wget https://github.com/clvv/fasd/archive/1.0.1.tar.gz }
@@ -249,10 +249,10 @@ def install_with_apt_get
     run %{ rm -rf jsl-0.3.0 }
     puts
     puts "Installing vim-edge ..."
-    run %{ sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev ruby-dev mercurial }
-    run %{ sudo apt-get remove vim vim-runtime gvim vim-tiny vim-common vim-gui-common }
+    run %{ sudo apt-get -y install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev ruby-dev mercurial }
+    run %{ sudo apt-get -y remove vim vim-runtime gvim vim-tiny vim-common vim-gui-common }
     run %{
-      sudo apt-get install liblua5.1-dev;
+      sudo apt-get -y install liblua5.1-dev;
       sudo mkdir /usr/include/lua5.1/include/;
       sudo cp /usr/include/lua5.1/* /usr/include/lua5.1/include/;
       sudo ln -s /usr/lib/x86_64-linux-gnu/liblua5.1.so /usr/local/lib/liblua.so;
