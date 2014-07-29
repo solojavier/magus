@@ -2154,9 +2154,9 @@
 		<key>0x9-0x40000</key>
 		<dict>
 			<key>Action</key>
-			<integer>32</integer>
+			<integer>10</integer>
 			<key>Text</key>
-			<string></string>
+			<string>[27;5;9~</string>
 		</dict>
 		<key>0xd-0x20000</key>
 		<dict>
@@ -2255,15 +2255,15 @@
 	<key>HiddenAdvancedFontRendering</key>
 	<false/>
 	<key>HideActivityIndicator</key>
-	<false/>
+	<true/>
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTab</key>
-	<false/>
+	<true/>
 	<key>HideTabCloseButton</key>
-	<false/>
+	<true/>
 	<key>HideTabNumber</key>
 	<true/>
 	<key>HighlightTabLabels</key>
@@ -2294,6 +2294,8 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
+	<key>NSColorPanelMode</key>
+	<string>6</string>
 	<key>NSFontPanelPreviewHeight</key>
 	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
@@ -2337,13 +2339,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1259 275 445 270 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>459 148 1016 502 0 0 2560 1418 </string>
+	<string>277 269 918 381 0 0 2560 1418 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
 	<string>766 400 1027 905 0 0 2560 1418 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>2790 730 592 584 2560 -104 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 320 2560 1098 0 0 2560 1418 </string>
+	<string>0 1013 2560 405 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>935 458 570 448 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -10304,14 +10306,16 @@
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.0</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.37254899740219116</real>
+				<real>0.37254899740000003</real>
 				<key>Red Component</key>
-				<real>0.68627500534057617</real>
+				<real>0.68627500529999996</real>
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
@@ -10370,14 +10374,16 @@
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.0</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.37254899740219116</real>
+				<real>0.37254899740000003</real>
 				<key>Red Component</key>
-				<real>0.68627500534057617</real>
+				<real>0.68627500529999996</real>
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
@@ -10620,13 +10626,6 @@
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x7f</string>
-				</dict>
-				<key>0x9-0x40000</key>
-				<dict>
-					<key>Action</key>
-					<integer>10</integer>
-					<key>Text</key>
-					<string>[27;5;9~</string>
 				</dict>
 				<key>0xf700-0x220000</key>
 				<dict>
@@ -11148,7 +11147,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowPaneTitles</key>
-	<true/>
+	<false/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
