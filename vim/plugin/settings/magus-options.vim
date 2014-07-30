@@ -14,8 +14,6 @@ if has("gui_running")
 else
   " Prevent Vim from clobbering the scrollback buffer.
   set t_ti= t_te=
-  " Support for mouse
-  set mouse=a 
   " Syntax coloring lines that are too long just slows down the world
   set synmaxcol=250
   set lazyredraw
