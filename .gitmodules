@@ -6,3 +6,7 @@
   path = zsh/prezto
   url = https://github.com/sorin-ionescu/prezto.git
   ignore = dirty
+[submodule "tmux/resurrect"]
+	path = tmux/resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect
+  ignore = dirty
