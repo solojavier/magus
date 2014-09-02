@@ -13,3 +13,11 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 command! StripTrailingWhitespaces call <SID>StripTrailingWhitespaces()
 nmap ,w :StripTrailingWhitespaces<CR>
+
+" Highlight trailing whitespace, but not during insertion
+highlight TrailingWhitespace ctermbg=red guibg=red
+au BufEnter    * match TrailingWhitespace /\s\+$/
+au InsertEnter * match TrailingWhitespace /\s\+\%#\@<!$/
+au InsertLeave * match TrailingWhitespace /\s\+$/
+au BufWinLeave * call clearmatches()
+
