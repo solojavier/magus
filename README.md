@@ -338,6 +338,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * `<C-r>` - (r)eplace selected text across document
  * `K` - split line, the opposite of J (join line)
  * `gp` - Visually select last pasted content.
+ * `,ms` - Move Selection to new File.
 
 
 #### Git Utilities

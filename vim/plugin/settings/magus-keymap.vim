@@ -237,6 +237,20 @@ map ,hi :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 " Source current file Cmd-% (good for vim development)
 map <D-%> :so %<CR>
 
+vnoremap ,ms :<C-u>call MoveSelection()<CR>
+function! MoveSelection()
+  let current_path = expand("%:h")
+  call inputsave()
+  let path = input('Enter path: ', current_path)
+  call inputrestore()
+  if filereadable(path)
+    execute "'<,'>w! >> " . path
+  else
+    execute "'<,'>w! " . path
+  endif
+  execute "normal gvd"
+endfunction
+
 " ,hp = html preview
 map <silent> ,hp :!open -a Safari %<CR><CR>
 
