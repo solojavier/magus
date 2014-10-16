@@ -35,6 +35,9 @@
   co = checkout                     # checkout
   nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
 
+  # fast-forward
+  ff = !sh -c 'branch=$(git symbolic-ref HEAD | cut -d '/' -f 3) && git merge --ff-only origin/$branch' -
+
   # cherry-pick
   cp = cherry-pick -x               # grab a change from a branch
 
