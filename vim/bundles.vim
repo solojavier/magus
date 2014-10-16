@@ -127,6 +127,7 @@ NeoBundle "mattn/emmet-vim"
 NeoBundle 'rizzatti/funcoo.vim'
 NeoBundle 'rizzatti/dash.vim'
 NeoBundle 'chrisbra/NrrwRgn'
+NeoBundle "thoughtbot/vim-rspec"
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"
