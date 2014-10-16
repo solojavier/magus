@@ -2295,40 +2295,23 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.magus/iTerm2</string>
-	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 470}</string>
+	<string>~</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
-	<key>NSTableView Columns KeyBingingTable</key>
-	<array>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATCG
-		</data>
-		<string>198</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATGG
-		</data>
-		<string>322</string>
-	</array>
-	<key>NSTableView Hidden Columns KeyBingingTable</key>
-	<array/>
-	<key>NSTableView Sort Ordering KeyBingingTable</key>
-	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>188 554 918 498 0 0 2560 1417 </string>
-	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 785 620 392 0 0 2560 1417 </string>
-	<key>NSWindow Frame UKCrashReporter</key>
-	<string>253 773 592 584 0 0 2560 1417 </string>
+	<string>411 359 924 485 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 1012 2560 405 0 0 2560 1417 </string>
+	<string>160 92 1165 706 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>150 13 1165 864 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>310 -69 1165 842 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>330 40 1165 706 0 0 1440 878 </string>
 	<key>NeverWarnAboutOverrides</key>
 	<true/>
 	<key>NeverWarnAboutOverrides_selection</key>
@@ -11038,8 +11021,6 @@
 			<string>~</string>
 		</dict>
 	</array>
-	<key>NoSyncSuppressAnnyoingBellOffer</key>
-	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -11092,7 +11073,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/mario/.magus/iTerm2</string>
+	<string>~/.magus/iTerm2</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -11101,16 +11082,18 @@
 	<integer>8</integer>
 	<key>RightOption</key>
 	<integer>3</integer>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
-	<key>SUFeedAlternateAppNameKey</key>
-	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/nightly.xml</string>
+	<string>http://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-10-11T11:50:56Z</date>
+	<date>2014-10-16T15:41:16Z</date>
+	<key>SUSkippedVersion</key>
+	<string>1.0.0.20131116</string>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -11122,7 +11105,7 @@
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.35152744391025637</real>
+	<real>0.35152745246887207</real>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
@@ -11139,8 +11122,6 @@
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
-	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1412552064</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -11164,7 +11145,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20141005-nightly</string>
+	<string>1.0.0.20140629</string>
 	<key>kPreferenceKeyWindowStyle</key>
 	<integer>0</integer>
 </dict>
