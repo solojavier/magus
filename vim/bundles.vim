@@ -15,7 +15,7 @@ filetype off
 
 set rtp+=~/.vim/bundle/neobundle.vim/
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " let NeoBundle manage NeoBundle (required)
 NeoBundleFetch "Shougo/neobundle.vim"
@@ -156,6 +156,8 @@ NeoBundle "hybridgroup/vim-colors-solarized"
 if filereadable(expand("~/.magus/vim/.bundles.local"))
   source ~/.magus/vim/.bundles.local
 endif
+
+call neobundle#end()
 
 "Filetype plugin indent on is required by NeoBundle
 filetype plugin indent on
