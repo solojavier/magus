@@ -15,7 +15,7 @@
     # Like Janus, but with more Magic.
     # The ultimate dotfiles distribution, compatible with MacOSX and Ubuntu!
 
-      sh -c "`curl -fsSL https://raw.github.com/marioricalde/magus/magus/install.sh`"
+      sh -c "`curl -fsSL https://raw.github.com/hybridgroup/magus/magus/install.sh`"
 
 
 **Important**: As of right now we're officially supporting MacOSX and Ubuntu. Use the same installation method above.
@@ -48,13 +48,13 @@ Installation is automated via `rake` and the `yadr` command. To get
 started please run:
 
 ```bash
-sh -c "`curl -fsSL https://raw.github.com/marioricalde/magus/magus/install.sh`"
+sh -c "`curl -fsSL https://raw.github.com/hybridgroup/magus/magus/install.sh`"
 ```
 
 **Note:** Magus will automatically install all of its subcomponents. If you want to be asked
 about each one, use:
 ```bash
-sh -c "`curl -fsSL https://raw.github.com/marioricalde/magus/magus/install.sh`" -s ask
+sh -c "`curl -fsSL https://raw.github.com/hybridgroup/magus/magus/install.sh`" -s ask
 ```
 
 # Additional Installation
@@ -163,7 +163,7 @@ The usage of Vim and Tmux is recommended. For this sole purpose we've included [
 Pry offers a much better out of the box IRB experience with colors, tab completion, and lots of other tricks. You can also use it
 as an actual debugger on MRI 1.9.2+ by installing [pry-debugger](https://github.com/nixme/pry-debugger).
 
-[Learn more about Magus's pry customizations and how to install](https://github.com/marioricalde/magus/blob/master/README-pry.md)
+[Learn more about Magus's pry customizations and how to install](https://github.com/hybridgroup/magus/blob/master/README-pry.md)
 
 ### Git Configuration
 
@@ -563,7 +563,7 @@ Please explore these people's work.
 
 ### Mantainer
 
-@[MarioRicalde](https://github.com/MarioRicalde)
+@[hybridgroup](https://github.com/hybridgroup)
 
 ### Contributors
 
@@ -574,6 +574,6 @@ Magus is made possible by many awesome people, too many to list :) But here are 
  * YADR: Switch from oh-my-zsh to Presto: @[JeanMertz](https://github.com/JeanMertz)
  * YADR: Vundle migration: @[duhanebel](https://github.com/duhanebel)
  * YADR: NeoBundle migration: @[lfilho](https://github.com/lfilho)
- * **MAGUS**: Initiator @[MarioRicalde](https://github.com/MarioRicalde)
+ * **MAGUS**: Initiator @[hybridgroup](https://github.com/marioricalde)
  * **MAGUS**: First Magus User @[Dfischer](https://github.com/dfischer)
 
