@@ -66,6 +66,7 @@ NeoBundle "tjennings/git-grep-vim"
 NeoBundle "tpope/vim-fugitive"
 NeoBundle "tpope/vim-git"
 NeoBundle "mhinz/vim-signify"
+NeoBundle "AndrewRadev/gapply.vim"
 
 " General text editing improvements...
 NeoBundle "Lokaltog/vim-easymotion"
