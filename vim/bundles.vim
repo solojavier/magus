@@ -56,7 +56,7 @@ NeoBundle "pangloss/vim-javascript"
 NeoBundle "jby/tmux.vim.git"
 NeoBundle "JulesWang/css.vim"
 NeoBundle "cakebaker/scss-syntax.vim"
-NeoBundle "jnwhiteh/vim-golang"
+NeoBundle "fatih/vim-go"
 
 " Git related...
 NeoBundle "hybridgroup/vim-git-grep-rails-partial"
@@ -128,6 +128,7 @@ NeoBundle "mattn/emmet-vim"
 NeoBundle 'rizzatti/funcoo.vim'
 NeoBundle 'rizzatti/dash.vim'
 NeoBundle 'chrisbra/NrrwRgn'
+NeoBundle "thoughtbot/vim-rspec"
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"
@@ -162,6 +163,7 @@ call neobundle#end()
 
 "Filetype plugin indent on is required by NeoBundle
 filetype plugin indent on
+
 
 " Installation check.
 NeoBundleCheck

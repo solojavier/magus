@@ -19,7 +19,7 @@ endif
 " ================ General Config ====================
 
 set title                       "change the terminal's title
-set nonumber                    "Line numbers are not needed #21
+set relativenumber                    "Line numbers are not needed #21
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
@@ -100,3 +100,5 @@ set wildignore+=*.swp,*~,._*,*/.AppleDouble*,*.DS_STORE,log/**,tmp/**,*vim/backu
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+
+inoremap jk <esc>
