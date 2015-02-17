@@ -143,6 +143,12 @@ alias pu='pushd'
 alias rm="${aliases[rm]:-rm} -i"
 alias type='type -a'
 
+# Extra git
+alias gp='git push'
+alias gpo='git push origin'
+alias gpl='git pull'
+alias gplo='git pull origin'
+
 # Mac OS X Everywhere
 if [[ "$OSTYPE" == darwin* ]]; then
   alias o='open'
