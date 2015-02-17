@@ -128,3 +128,6 @@
   path = .gitconfig.user
 [init]
 	templatedir = ~/.git_template
+[user]
+	name = Javier Cervantes
+	email = 1.27201@gmail.com
