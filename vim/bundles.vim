@@ -69,7 +69,6 @@ NeoBundle "mhinz/vim-signify"
 NeoBundle "AndrewRadev/gapply.vim"
 
 " General text editing improvements...
-NeoBundle "Lokaltog/vim-easymotion"
 NeoBundle "AndrewRadev/splitjoin.vim"
 NeoBundle "Raimondi/delimitMate"
 NeoBundle "briandoll/change-inside-surroundings.vim"
