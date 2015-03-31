@@ -63,7 +63,7 @@ NeoBundle "tpope/vim-git"
 NeoBundle "mhinz/vim-signify"
 
 " General text editing improvements...
-" NeoBundle "Raimondi/delimitMate"
+NeoBundle "Raimondi/delimitMate"
 NeoBundle "Shougo/neocomplete.vim"
 NeoBundle "vim-scripts/IndexedSearch"
 NeoBundle "vim-scripts/matchit.zip"
