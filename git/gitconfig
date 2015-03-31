@@ -113,7 +113,7 @@
 [core]
   autocrlf = false
   editor = vim
-  excludesfile = ~/.magus/git/gitignore
+	excludesfile = /Users/javier/.gitignore
 [advice]
   statusHints = false
 [diff]
@@ -131,3 +131,7 @@
 [user]
 	name = Javier Cervantes
 	email = 1.27201@gmail.com
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true

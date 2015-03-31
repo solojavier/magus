@@ -23,15 +23,12 @@ NeoBundleFetch "Shougo/neobundle.vim"
 " All Magus Bundles here
 
 " Ruby, Rails, Rake...
-NeoBundle "rking/vim-ruby-refactoring"
 NeoBundle "tpope/vim-rails"
 NeoBundle "tpope/vim-rake"
 NeoBundle "vim-ruby/vim-ruby"
-NeoBundle "vim-scripts/Specky"
 NeoBundle "ck3g/vim-change-hash-syntax"
 NeoBundle "tpope/vim-bundler"
 NeoBundle "thoughtbot/vim-rspec"
-NeoBundle "elixir-lang/vim-elixir"
 
 " Other Languages
 NeoBundle "hybridgroup/vim-html-escape"
@@ -58,50 +55,29 @@ NeoBundle "jby/tmux.vim.git"
 NeoBundle "JulesWang/css.vim"
 NeoBundle "cakebaker/scss-syntax.vim"
 NeoBundle "fatih/vim-go"
+NeoBundle "elixir-lang/vim-elixir"
 
 " Git related...
-NeoBundle "hybridgroup/vim-git-grep-rails-partial"
-NeoBundle "MarioRicalde/gitv"
 NeoBundle "mattn/gist-vim"
-NeoBundle "tjennings/git-grep-vim"
-NeoBundle "tpope/vim-fugitive"
 NeoBundle "tpope/vim-git"
 NeoBundle "mhinz/vim-signify"
-NeoBundle "AndrewRadev/gapply.vim"
 
 " General text editing improvements...
-NeoBundle "AndrewRadev/splitjoin.vim"
-NeoBundle "Raimondi/delimitMate"
-NeoBundle "briandoll/change-inside-surroundings.vim"
+" NeoBundle "Raimondi/delimitMate"
 NeoBundle "Shougo/neocomplete.vim"
-NeoBundle "Shougo/neosnippet.vim"
-NeoBundle "godlygeek/tabular"
-NeoBundle "honza/vim-snippets"
-NeoBundle "nelstrom/vim-visual-star-search"
-NeoBundle "tomtom/tcomment_vim"
 NeoBundle "vim-scripts/IndexedSearch"
-NeoBundle "vim-scripts/camelcasemotion"
 NeoBundle "vim-scripts/matchit.zip"
-NeoBundle "tommcdo/vim-exchange"
 NeoBundle "gorodinskiy/vim-coloresque"
 
 " General vim improvements
-" NeoBundle "vim-scripts/YankRing.vim"
-NeoBundle "hybridgroup/greplace.vim"
 NeoBundle "MarcWeber/vim-addon-mw-utils"
 NeoBundle "bogado/file-line"
-NeoBundle "jistr/vim-nerdtree-tabs"
 NeoBundle "kien/ctrlp.vim"
-NeoBundle "majutsushi/tagbar"
-NeoBundle "mattn/webapi-vim"
 NeoBundle "rking/ag.vim"
 NeoBundle "scrooloose/nerdtree"
 NeoBundle "scrooloose/syntastic"
 NeoBundle "jlanzarotta/bufexplorer"
-NeoBundle "sjl/gundo.vim"
-NeoBundle "MarioRicalde/vim-qargs"
-NeoBundle "tomtom/tlib_vim"
-NeoBundle "tpope/vim-abolish"
+NeoBundle "nelstrom/vim-qargs"
 NeoBundle "tpope/vim-endwise"
 NeoBundle "tpope/vim-ragtag"
 NeoBundle "tpope/vim-repeat"
@@ -109,10 +85,7 @@ NeoBundle "tpope/vim-surround"
 NeoBundle "tpope/vim-unimpaired"
 NeoBundle "vim-scripts/AnsiEsc.vim"
 NeoBundle "vim-scripts/AutoTag"
-NeoBundle "vim-scripts/lastpos.vim"
 NeoBundle "vim-scripts/sudo.vim"
-NeoBundle "xsunsmile/showmarks"
-NeoBundle "Shougo/vimshell.vim"
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
@@ -121,14 +94,9 @@ NeoBundle 'Shougo/vimproc', {
       \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
-NeoBundle "MarioRicalde/stab.vim"
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle "nelstrom/vim-visual-star-search"
 NeoBundle "mattn/emmet-vim"
-NeoBundle 'rizzatti/funcoo.vim'
-NeoBundle 'rizzatti/dash.vim'
-NeoBundle 'chrisbra/NrrwRgn'
-NeoBundle "thoughtbot/vim-rspec"
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"

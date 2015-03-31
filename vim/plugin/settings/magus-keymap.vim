@@ -15,13 +15,6 @@ nnoremap ,ow "_diwhp
 "make Y consistent with C and D
 nnoremap Y y$
 
-" Make 0 go to the first character rather than the beginning
-" of the line. When we're programming, we're almost always
-" interested in working with text rather than empty space. If
-" you want the traditional beginning of line, use ^
-nnoremap 0 ^
-nnoremap ^ 0
-
 " ========================================
 " RSI Prevention - keyboard remaps
 " ========================================
@@ -216,13 +209,6 @@ nnoremap K i<CR><ESC>
 
 " Select last pasted text.
 nnoremap <expr> pv '`[' . strpart(getregtype(), 0, 1) . '`]'
-
-" ============================
-" Tabularize - alignment
-" ============================
-" Hit Cmd-Shift-A then type a character you want to align by
-nmap <D-A> :Tabularize /
-vmap <D-A> :Tabularize /
 
 " ============================
 " SplitJoin plugin
