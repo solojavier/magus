@@ -148,6 +148,8 @@ alias gp='git push'
 alias gpo='git push origin'
 alias gpl='git pull'
 alias gplo='git pull origin'
+alias gpom='git push origin master'
+alias gpod='git push origin develop'
 
 # Mac OS X Everywhere
 if [[ "$OSTYPE" == darwin* ]]; then
